@@ -1,0 +1,4 @@
+# No indexar para el agente (ver .cursor/rules/iamgroup-user-private-folders.mdc).
+# Si al @mencionar archivos dejara de adjuntarse bien, comenta la línea que corresponda.
+current-page/
+references/

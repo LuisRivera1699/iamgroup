@@ -1,0 +1,25 @@
+---
+description: Marca y paleta IAM Group para UI (colores, fondos, proporciones)
+globs: "**/*.{tsx,jsx,css,scss,svelte,vue,html}"
+alwaysApply: false
+---
+
+# UI — marca IAM Group
+
+Antes de definir colores, fondos o estilos visuales en componentes, layouts o hojas de estilo, **lee y aplica** `colors/colors.md` (en la raíz del proyecto): ahí está la paleta completa (hex) y notas de extracción.
+
+## Resumen operativo (no sustituye el documento)
+
+- **Principales:** `#d1d1d1` (gris claro), `#fbb03b` (acento cálido corporativo).
+- **Secundarios de referencia:** `#475b7b`, `#fbc540`, `#0f2d4e`.
+- **Listas amplias:** azules y amarillos en tablas de `colors/colors.md` — úsalos con coherencia, no introduzcas hex arbitrarios fuera de esa guía.
+- **Énfasis / lectura (del propio `colors.md`):** amarillo para lo resaltante; gris para texto; fondos de sección pueden usar gama de **azules**; **no** secciones con fondo gris, blanco o amarillo puro; alternativa: sección con **fondo de imagen**. Comprueba **contraste** (texto sobre azul oscuro vs sobre claros).
+- **Proporción orientativa:** ~65% azul, ~25% gris, ~15% amarillo (como guía, no medición pixel a pixel).
+
+## Qué hacer en la práctica
+
+1. Alinear colores a hex de `colors/colors.md` (o tokens que los referencien).
+2. Cumplir la restricción de **fondos de sección** (solo azules o imagen, no gris/blanco/amarillo como fill de sección entera).
+3. Si un valor duda o CMYK exacto, el `.md` indica que el hex del PDF manda; el PDF / manual impreso sería la referencia final.
+
+Si falta un token o variable en código, añade o reutiliza uno existente mapeado a esos hex en lugar de inventar tonos nuevos.

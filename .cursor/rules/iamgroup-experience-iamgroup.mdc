@@ -1,0 +1,26 @@
+---
+description: Tono inversor/tech, calidad diseño+frontend, marca IAMGroup
+alwaysApply: true
+---
+
+# Experiencia: IAMGroup (inversor, tech, profesional)
+
+## Identidad y audiencia
+
+- Nombre: **IAMGroup** (mantener consistencia tipográfica en UI y textos).
+- La web debe sentirse **credible para inversores y perfiles técnicos**: clara, sobria, precisa, **sin** marketing ruidoso ni “startup genérica”.
+- Objetivo percibido: **diseñador senior + frontend senior** — cuidado en tipografía, ritmo vertical, microdetalle y rendimiento, no en ornamentación fría o genérica.
+
+## Barra de calidad (aplica a toda implementación de UI)
+
+- **Legibilidad y jerarquía:** títulos, interlineado y contraste alineados a la paleta (ver regla de colores y `colors/colors.md`).
+- **Espacio y consistencia:** escala de spacing coherente; alineación y grillas; evitar secciones “a ojo” desparejas.
+- **Interacción:** transiciones o estados discretos; **enlaces y botones:** `cursor-pointer` + idle, hover, active, focus y disabled (regla **iamgroup-ui-interactive-states**).
+- **Contenido:** textos informativos y concretos; al redactar o integrar copy en la UI, **conservar el matiz y los hechos** que el usuario aporte (no vaciar ni sensacionalizar).
+- **Accesibilidad y rendimiento:** HTML semántico, etiquetas adecuadas, `alt` en imágenes, evitar bloqueo innecesario del hilo principal.
+- **Responsive (no negociable):** mobile-first, breakpoints Tailwind, móvil tan cuidado como desktop — ver regla **iamgroup-ui-responsive**.
+
+## Coherencia con marca
+
+- Colores, fondos de sección y acentos según `colors/colors.md` y la regla **“Marca y paleta IAM Group para UI”**.
+- `logo/logo.md` puede contener referencias de activos; al integrar, preferir recursos bajo `public/` o dominio definitivo acordado.

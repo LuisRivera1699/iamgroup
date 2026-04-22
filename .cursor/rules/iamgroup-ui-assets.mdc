@@ -1,0 +1,25 @@
+---
+description: Iconos en SVG; fotos desde bancos gratuitos (p. ej. Unsplash) y verificar que carguen
+alwaysApply: true
+---
+
+# Iconos e imágenes
+
+## Iconos
+
+- Si hace falta un **icono** (UI, flechas, redes, estados): implementarlo en **SVG** — componente React con `<svg>`, archivo `.svg` importado o bajo `public/`, o librería que entregue SVG.
+- **No** usar PNG/JPEG/WebP como sustituto de iconos de interfaz (p. ej. “icono” de 24px en raster); los SVG escalan nítidos y alinean mejor con accesibilidad (`title`, `aria-hidden` según el caso).
+- Excepción: si el usuario aporta expresamente un recurso raster o hay requisito de marca.
+
+## Imágenes fotográficas / ilustraciones
+
+- Obtenerlas de **bancos gratuitos con licencia clara** para uso en web, por ejemplo **Unsplash**, **Pexels**, **Pixabay** (u otros con licencia compatible; respetar atribución si el banco la pide).
+- **Antes de integrar** en el código o dejar la feature como hecha:
+  - Comprobar que la **URL** responde y devuelve imagen (p. ej. petición HTTP o carga en `next/image` en entorno local).
+  - Si se usa **dominio remoto** con `next/image`, asegurar que el dominio está en **`images.remotePatterns`** de `next.config` (o equivalente).
+  - Si se **descarga** a `public/`, confirmar que el archivo existe y el `src` en el componente coincide.
+- No enlazar imágenes rotas, placeholders dudosos ni hotlinks sin probar.
+
+## Resumen
+
+Iconos → **SVG**. Fotos de stock **gratis y con licencia OK** → **verificar que cargan** y la config de Next permite el origen antes de dar por cerrado.

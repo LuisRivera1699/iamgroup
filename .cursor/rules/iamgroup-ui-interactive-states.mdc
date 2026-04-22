@@ -1,0 +1,28 @@
+---
+description: Enlaces y botones con cursor pointer y estados idle, hover, active, focus, disabled
+alwaysApply: true
+---
+
+# Controles interactivos (enlaces, botones)
+
+Los elementos cliqueables o que actúan como tal (`<a>` con `href`, `<button>`, o controles con `role="button"` y teclado) deben ser **predecibles y accesibles**: cursor, reposo, hover, activo, foco y deshabilitado.
+
+## Cursor
+
+- Aplicar **`cursor-pointer`** a enlaces y botones (y a wrappers clicables intencionales). Excepción: señalar explícitamente si el diseño pide otra pista (`cursor-not-allowed` en disabled, etc.).
+
+## Estados (Tailwind: nombrar siempre de forma coherente)
+
+| Estado | Qué implica |
+|--------|-------------|
+| **Idle (reposo)** | Estilo base por defecto: color, fondo, borde o subrayado acorde a la paleta; legible y consistente con el componente. |
+| **Hover** | `hover:` — cambio sutil (color, opacidad, subrayado, sombra) en dispositivos que lo soportan. No depender *solo* de hover para entender el control (en táctil no hay hover al pasar). |
+| **Active** | `active:` — feedback al pulsar (oscurecer, presionar, escala mínima) para enlace y botón. |
+| **Focus** | `focus-visible:` (o `ring-*` + `ring-offset-*`) — anillo o contraste claro con teclado; no quitar el foco sin reemplazo accesible. |
+| **Disabled** | `disabled:` en `<button disabled>`; si es enlace o botón con `aria-disabled`, reflejarlo en estilos (opacidad, `pointer-events-none` si procede) y `cursor-not-allowed` cuando el diseño lo defina. |
+
+## Práctica
+
+- Componentes reutilizables: centralizar clases (variante “link”, “botón primario”, etc.) para no omitir estados.
+- Navegación y CTAs del header/hero: mismo criterio que el resto del sitio.
+- Revisar en **teclado** (Tab) y con **pulsación** (active) además de hover en desktop.

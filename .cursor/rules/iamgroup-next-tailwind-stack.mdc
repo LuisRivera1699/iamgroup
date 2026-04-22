@@ -1,0 +1,24 @@
+---
+description: Stack fijo del sitio — Next.js, Tailwind, sitio estático sin backend/CMS
+alwaysApply: true
+---
+
+# Stack: Next.js + Tailwind (IAMGroup)
+
+## Obligatorio
+
+- **Framework:** Next.js con **App Router** (`app/`) y **TypeScript**.
+- **Estilos:** **Tailwind CSS** como sistema principal de estilos (utilidades, diseño coherente con la marca en `colors/colors.md`).
+- **Alcance del producto:** web **informativa**; el contenido vive **en el repositorio** (p. ej. textos en componentes o módulos acordados, constantes, markdown estático fuera de carpetas personales de borrador). **No** hay backend propio, **no** hay CMS headless ni integración de API para gestionar textos en runtime.
+
+## Qué no hacer (salvo que el producto cambie de forma explícita)
+
+- No añadir BFF, API routes “tipo CMS”, bases de datos ni autenticación para este sitio estático.
+- No introducir otra capa de estilos global que sustituya Tailwind (p. ej. CSS-in-JS masivo) sin decisión de equipo.
+
+## Convenciones prácticas
+
+- **`public/`** para estáticos; **`next/image`** para imágenes con tamaños y `alt` adecuados.
+- **Server Components** por defecto; `"use client"` solo donde haga falta interactividad o hooks del navegador.
+- **Rutas y metadatos** con las APIs de App Router (`layout.tsx`, `page.tsx`, `metadata` / `generateMetadata` según el caso).
+- Reutilizar componentes bajo un directorio claro (p. ej. `components/`) y alias `@/*` si está definido en el proyecto.

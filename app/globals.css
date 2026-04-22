@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+:root {
+  --background: #0a1624;
+  --foreground: #d1d1d1;
+  --iam-navy: #0f2d4e;
+  --iam-navy-deep: #0c2c50;
+  /* Aprox. 1 fila de header: solapa el inicio de la home bajo el header para “transparente” real sobre el hero. */
+  --header-overlap: 5rem;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-iam-navy: var(--iam-navy);
+  --color-iam-navy-deep: var(--iam-navy-deep);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}

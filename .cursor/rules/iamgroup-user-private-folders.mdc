@@ -1,0 +1,49 @@
+---
+description: Carpetas personales (current-page, references): el agente no las inspecciona ni las usa como fuente del sitio; excepción si el usuario adjunta un archivo en el chat
+alwaysApply: true
+---
+
+# Carpetas personales — no son fuente del proyecto
+
+## `current-page/`
+
+Solo para uso personal del usuario. El agente **no** debe:
+
+- Leer, abrir, citar ni importar archivos bajo `current-page/`.
+- Inferir copy, estructura o requisitos desde ahí.
+- Mencionarlos en respuestas salvo que el **usuario** pegue o transcriba texto en el chat.
+
+El contenido del sitio sale de la conversación, del **código fuera de esta carpeta**, o de lo que el usuario indique. Si falta copy: **preguntar** o placeholders neutros.
+
+---
+
+## `references/`
+
+Material de **referencia personal** (p. ej. capturas, maquetas, imágenes). El agente **no** debe:
+
+- Buscar, listar, abrir con herramientas ni inspeccionar `references/` **por iniciativa propia**.
+- Usar rutas `references/...` en el **código de la app** (`<Image src>`, `public/`, CSS `url()`, import estático, etc.).
+- Copiar o mover archivos desde `references/` hacia `public/` o el bundle **sin instrucción explícita** del usuario de hacerlo hacia una ruta **no** bajo `references/`.
+- Tratar `references/` como biblioteca de medios del sitio en despliegue.
+
+### Si el usuario **@ menciona o adjunta** un archivo de `references/`
+
+Ese contenido cuenta como **material que el usuario comparte en el chat** (como si lo hubiera pegado). El agente puede:
+
+- Usarlo para **explicar, comparar o opinar** sobre lo mostrado en esa conversación.
+
+El agente **sigue sin**:
+
+- Incrustar `references/...` en código de producción.
+- Asumir que esos archivos van al repositorio público del sitio; para **implementar** imágenes en la web, seguir `iamgroup-ui-assets` (stock, `public/`, etc.) salvo que el usuario **ordene** explícitamente subir un asset a una ruta concreta fuera de `references/`.
+
+---
+
+## Resumen
+
+| Carpeta        | Agente «a ciegas» del repo | Código del sitio usa paths bajo esa carpeta |
+| -------------- | -------------------------- | -------------------------------------------- |
+| `current-page/` | No                         | No                                           |
+| `references/`   | No                         | No                                           |
+
+Si hace falta contexto de `references/`, el usuario lo **trae** al hilo (adjunto / @); el agente no lo **saca** solo.

@@ -1,0 +1,23 @@
+---
+description: UI mobile-first y responsive; nada solo “bonito en desktop”
+alwaysApply: true
+---
+
+# UI responsive (obligatorio)
+
+Todo lo que sea **interfaz** (layouts, páginas, componentes visuales, utilidades Tailwind) debe **funcionar y verse bien en móvil**, no solo escalado estético en desktop. El **móvil es la base**; desktop es progresión.
+
+## Enfoque
+
+- **Mobile-first:** estilos por defecto para viewports estrechos (`~320px` en adelante); añadir `sm:`, `md:`, `lg:`, etc. cuando haga falta más espacio o columnas — no al revés (no “desktop primero y luego un parche”).
+- **Layouts:** grillas y flex que **apilen** o reorganicen en una columna donde corresponda; evitar anchos fijos en `px` que rompan el viewport; preferir `max-w-*`, `min-w-0`, porcentajes y `w-full` con contenedores acotados.
+- **Tipografía:** tamaños de texto legibles en pantalla pequeña; ajustar `text-*` y `leading-*` por breakpoint si los títulos quedan desproporcionados.
+- **Espaciado:** padding/margin que no dejen contenido pegado al borde en móvil (`px-4` o equivalente en secciones); revisar gaps en grillas al colapsar.
+- **Interacción táctil:** zonas tocables amplias (~`44px` mínimo de área razonable) para enlaces y botones; no depender solo de `hover` (estados de foco visibles, estados “activo” en móvil).
+- **Overflow:** sin scroll horizontal involuntario; tablas o bloques anchos con `overflow-x-auto` o diseño alternativo en móvil.
+- **Imágenes y media:** `next/image` con `sizes` acorde a ancho real; imágenes de fondo o hero que no recorten mal el mensaje en formato vertical.
+- **Navegación (header, menú):** patrón usable en móvil (menú plegable, overlay, o equivalente) — no menús horizontales que desborden sin plan.
+
+## Criterio de aceptación
+
+Antes de dar por cerrado un bloque de UI, razonar al menos: **“¿cómo se ve y se usa en ~375px de ancho?”** Si el diseño solo “funciona” a 1280px, **ajustar** hasta que móvil quede a la altura de desktop en calidad percibida.

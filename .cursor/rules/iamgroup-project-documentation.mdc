@@ -1,0 +1,25 @@
+---
+description: Mantener documentación del repo (rutas, cambios, stack) siempre al día
+alwaysApply: true
+---
+
+# Documentación del proyecto (obligatoria)
+
+El agente **debe** mantener la carpeta `docs/` coherente con el código. No cerrar un cambio sustancial **sin** actualizar la documentación que corresponda (misma tarea, mismo PR lógico).
+
+## Qué archivo tocar
+
+| Situación | Acción |
+|-----------|--------|
+| **Nueva ruta** (página, segmento `app/`, redirección relevante) | Añadir o corregir fila en `docs/routes.md` (ruta, propósito breve, notas). |
+| **Cambio visible** (nueva feature, sección, flujo, dependencia mayor, script, config de build, variables de entorno) | Añadir entrada con fecha en `docs/CHANGELOG.md` (qué cambió, en una o pocas frases). |
+| **Cambio de stack o convención** (Tailwind, Next, alias, estructura de carpetas) | Actualizar el apartado correspondiente en `docs/README.md` o la subsección que defina (si no existe, crédala bajo `docs/`). |
+| **Primera vez que exista** `package.json` / `next.config` / despliegue | Documentar en `docs/README.md` o un archivo dedicado bajo `docs/` (p. ej. scripts, `build`, dónde se despliega), sin duplicar basura: lo mínimo para que un dev nuevo entienda. |
+
+## Criterio
+
+- **Sustancial** = afecta cómo se navega, construye, despliega o entiende el proyecto; o añade/retira dependencias o rutas.
+- No hace falta un changelog por typo interno; sí por cambio de comportamiento o estructura.
+- Fechas en changelog en **ISO** (`YYYY-MM-DD`).
+
+Si el usuario pide explícitamente *no* tocar `docs/` en un caso puntual, priorizar eso para esa tarea.
