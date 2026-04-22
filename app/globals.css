@@ -1,12 +1,23 @@
 @import "tailwindcss";
 
+/*
+  Altura real del header:
+    mobile  → py-3 (12px×2=24px) + logo h-10 (40px) = 64px = 4rem
+    sm+     → py-4 (16px×2=32px) + logo h-11 (44px) = 76px ≈ 4.75rem
+  Usada en páginas sin hero de portada para compensar el header fixed.
+*/
 :root {
   --background: #0a1624;
   --foreground: #d1d1d1;
   --iam-navy: #0f2d4e;
   --iam-navy-deep: #0c2c50;
-  /* Aprox. 1 fila de header: solapa el inicio de la home bajo el header para “transparente” real sobre el hero. */
-  --header-overlap: 5rem;
+  --header-h: 4rem;
+}
+
+@media (min-width: 640px) {
+  :root {
+    --header-h: 4.75rem;
+  }
 }
 
 @theme inline {

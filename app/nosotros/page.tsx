@@ -8,7 +8,7 @@ export default function NosotrosPage() {
   return (
     <main
       id="contenido-principal"
-      className="min-h-screen bg-gradient-to-b from-[#0e2c4d] to-[#143c69] px-4 py-12 sm:px-6 sm:py-16 lg:px-8"
+      className="min-h-screen bg-gradient-to-b from-[#0e2c4d] to-[#143c69] px-4 pt-[calc(var(--header-h)+3rem)] pb-12 sm:px-6 sm:pb-16 lg:px-8"
     >
       <div className="mx-auto max-w-3xl">
         <h1 className="text-3xl font-semibold text-white">Nosotros</h1>

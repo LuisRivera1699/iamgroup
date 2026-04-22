@@ -50,10 +50,10 @@ export function SiteHeader() {
   return (
     <header
       className={[
-        "sticky top-0 z-50 w-full border-b transition-[background-color,backdrop-filter,box-shadow,border-color] duration-300",
+        "fixed inset-x-0 top-0 z-50 border-b transition-[background-color,border-color,box-shadow] duration-300",
         isAtTop
-          ? "border-transparent bg-transparent shadow-none [backdrop-filter:none]"
-          : "border-[#1d3f62]/40 bg-[#0f2d4e] shadow-sm [backdrop-filter:none]",
+          ? "border-transparent bg-transparent shadow-none"
+          : "border-[#1d3f62]/40 bg-[#0f2d4e] shadow-sm",
       ].join(" ")}
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-3 px-4 py-3 sm:px-6 sm:py-4 lg:px-8">
@@ -132,18 +132,23 @@ export function SiteHeader() {
         </div>
       </div>
 
+      {/*
+        El panel móvil siempre tiene bg sólido, independientemente del estado
+        de scroll — porque es un menú abierto intencionalmente por el usuario,
+        y al ser `fixed` se superpone sobre el contenido sin empujarlo.
+      */}
       <div
         id={panelId}
         className={[
-          "mx-auto w-full max-w-7xl overflow-hidden border-white/10 transition-all duration-300 ease-out lg:hidden",
+          "w-full overflow-hidden bg-[#0f2d4e] transition-all duration-300 ease-out lg:hidden",
           mobileOpen
             ? "max-h-[32rem] border-t border-white/10 py-3 opacity-100"
-            : "max-h-0 border-t-0 border-transparent py-0 opacity-0 [pointer-events:none]",
+            : "max-h-0 border-t-0 py-0 opacity-0 [pointer-events:none]",
         ].join(" ")}
         aria-hidden={!mobileOpen}
       >
         <nav
-          className="flex flex-col gap-1 px-4 sm:px-6 lg:px-8"
+          className="mx-auto flex max-w-7xl flex-col gap-1 px-4 sm:px-6 lg:px-8"
           aria-label="Móvil"
         >
           {NAV_ITEMS.map((item) => {
