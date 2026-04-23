@@ -81,9 +81,15 @@ function CountUpNumber({
 
 type HomeMetricsSectionProps = {
   showCta?: boolean;
+  ctaLabel?: string;
+  ctaHref?: string;
 };
 
-export function HomeMetricsSection({ showCta = true }: HomeMetricsSectionProps) {
+export function HomeMetricsSection({
+  showCta = true,
+  ctaLabel = "Conoce más",
+  ctaHref = "/nosotros",
+}: HomeMetricsSectionProps) {
   const sectionRef = useRef<HTMLElement | null>(null);
   const [hasEntered, setHasEntered] = useState(false);
 
@@ -151,10 +157,10 @@ export function HomeMetricsSection({ showCta = true }: HomeMetricsSectionProps) 
           {showCta ? (
             <ScrollReveal direction="right" delayMs={170}>
               <Link
-                href="/nosotros"
+                href={ctaHref}
                 className="inline-flex min-h-11 w-fit cursor-pointer items-center gap-2 rounded-full border border-[#c0deff]/60 bg-[#c0deff]/10 px-5 py-2 text-sm font-semibold text-white transition-colors hover:bg-[#c0deff]/20 active:bg-[#c0deff]/25 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#c0deff] sm:min-h-12"
               >
-                Conoce más
+                {ctaLabel}
                 <span aria-hidden className="text-base leading-none">
                   →
                 </span>

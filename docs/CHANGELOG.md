@@ -4,6 +4,15 @@ Entradas breves. Formato: `## YYYY-MM-DD` y viñetas.
 
 ## 2026-04-23
 
+- Financiamiento: la vista dejó el placeholder y ahora replica la estructura inicial de Inversiones con hero + sección de productos traslapada, copy propio orientado a liquidez empresarial y CTA `Contacta a un asesor` hacia `/contacto`.
+- Financiamiento (productos): nuevo bloque comercial con 4 soluciones (`Factoring`, `Confirming`, `Adelanto de flujos`, `Estructuración y financiamiento a mediano plazo`), detalle visible por card e iconografía SVG propia para coherencia visual con marca.
+- Financiamiento: se añadió al cierre de la página la sección `Nuestras alianzas` reutilizada desde Home para mantener respaldo institucional y consistencia visual entre vistas.
+- Inversiones: se reutilizó la sección `Nuestras cifras` como bloque siguiente y el CTA del bloque se parametrizó para mostrar `Contacta a un asesor` con destino `/contacto`.
+- Inversiones: nueva sección didáctica `Cómo movemos tu capital` (fondo oscuro con imagen + overlay) con diagrama visual de flujo de capital en 5 pasos y bloque claro de `Herramientas de evaluación`.
+- Inversiones (productos): actualización de titular principal por una versión propia de marca, evitando wording genérico y manteniendo jerarquía visual con acento amarillo.
+- Inversiones (sección productos): refinada la integración visual con el hero (traslape más orgánico), el texto de impacto pasó a acento amarillo de marca y se eliminó el reveal por hover para mostrar el detalle completo de cada fondo de forma directa.
+- Inversiones: nueva segunda sección traslapada al hero con enfoque comercial directo para inversionistas, resumen de propuesta competitiva/diversificada y cards de producto (`Fondo Medicash/Soles`, `Fondo Facturas Dólares`) con detalle revelado en hover/click e iconografía SVG propia.
+- Inversiones: hero section renovado con imagen de fondo de stock (Unsplash), copy de impacto orientado a inversionistas, resaltado amarillo de marca y CTA `Contacta a un asesor` hacia `/contacto` sin formulario embebido.
 - Nosotros (Directorio): corregido el espacio vacío excesivo en tarjetas; se retiró la altura mínima global y se normalizó solo el bloque de nombre/cargo para mantener coherencia sin huecos.
 - Nosotros (Directorio): se normalizó la altura de tarjetas para mantener dimensiones coherentes entre perfiles en una sola fila/carrusel, incluso cuando cambian los saltos de línea en nombres y cargos.
 - Nosotros (Directorio): ahora nunca se divide en dos filas; mantiene una sola fila mientras haya espacio y, al no caber, cambia a carrusel automático con drag, flechas y puntos de navegación.
