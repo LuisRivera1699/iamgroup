@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import { Suspense } from "react";
 import { ContactoAdvisorFormSection } from "@/components/contacto-advisor-form-section";
 import { ScrollReveal } from "@/components/scroll-reveal";
 
@@ -58,7 +59,17 @@ export default function ContactoPage() {
         </div>
       </section>
 
-      <ContactoAdvisorFormSection />
+      <Suspense
+        fallback={
+          <section className="bg-gradient-to-b from-[#edf5fc] to-[#f8fbff] py-12 sm:py-14 lg:py-16">
+            <div className="mx-auto w-full max-w-7xl px-4 text-sm font-medium text-[#1d3f62] sm:px-6 lg:px-8">
+              Cargando formulario...
+            </div>
+          </section>
+        }
+      >
+        <ContactoAdvisorFormSection />
+      </Suspense>
     </main>
   );
 }

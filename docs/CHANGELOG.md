@@ -4,6 +4,7 @@ Entradas breves. Formato: `## YYYY-MM-DD` y viñetas.
 
 ## 2026-04-23
 
+- Contacto (build): `ContactoAdvisorFormSection` ahora se renderiza dentro de `Suspense` en `/contacto` para cumplir con Next.js al usar `useSearchParams` y evitar el fallo de prerender en despliegues estáticos de Vercel.
 - Home (Por qué elegirnos): ícono `Experiencia y conocimiento` rediseñado en SVG propio con composición clásica (medalla con estrella en amarillo corporativo y libro abierto con páginas) para ganar estética, coherencia de marca y alejarse del aspecto genérico anterior.
 - Home (Por qué elegirnos): ícono `Inversiones a medida y seguras` rediseñado en SVG propio con escudo institucional, sello amarillo con check y barras ascendentes, manteniendo coherencia visual con el nuevo ícono de experiencia.
 - Inversiones (Fondo Medicash/Soles): ícono simplificado a una sola moneda institucional con anillo externo azul, aro interior en azul claro, acento amarillo de marca y símbolo `S/.` vectorial al centro para lectura nítida del producto.
