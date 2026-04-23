@@ -1,15 +1,6 @@
 <svg width="176" height="120" viewBox="0 0 176 120" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect x="16" y="30" width="52" height="60" rx="8" stroke="#0F4A78" stroke-width="4"/>
-  <path d="M28 48H56" stroke="#0F4A78" stroke-width="4" stroke-linecap="round"/>
-  <path d="M28 62H48" stroke="#5FA6D8" stroke-width="4" stroke-linecap="round"/>
-  <path d="M28 76H52" stroke="#5FA6D8" stroke-width="4" stroke-linecap="round"/>
-  <path d="M66 42L76 32L86 42" stroke="#0F4A78" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M76 32V57" stroke="#0F4A78" stroke-width="4" stroke-linecap="round"/>
-
-  <circle cx="120" cy="46" r="20" stroke="#0F4A78" stroke-width="4"/>
-  <path d="M120 35V57" stroke="#0F4A78" stroke-width="4" stroke-linecap="round"/>
-  <path d="M128 40C126.5 37.6 123.8 36 120.8 36C117.2 36 114.2 38.1 114.2 41.3C114.2 44.3 116.6 45.8 120.6 46.8C124.6 47.8 127 49.4 127 52.5C127 55.6 124.1 58 120.4 58C117 58 114 55.9 112.8 52.8" stroke="#5FA6D8" stroke-width="3" stroke-linecap="round"/>
-
-  <rect x="98" y="72" width="56" height="18" rx="9" stroke="#0F4A78" stroke-width="4"/>
-  <path d="M108 81H144" stroke="#0F4A78" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="88" cy="60" r="44" stroke="#0F4A78" stroke-width="4" fill="#ffffff"/>
+  <circle cx="88" cy="60" r="34" stroke="#5FA6D8" stroke-width="1.5"/>
+  <circle cx="88" cy="60" r="26" fill="#fbb03b"/>
+  <text x="88" y="70" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" fill="#0F4A78">S/.</text>
 </svg>

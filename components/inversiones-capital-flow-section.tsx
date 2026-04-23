@@ -70,13 +70,22 @@ function FlowStepIcon({
   if (icon === "capital") {
     return (
       <svg aria-hidden viewBox="0 0 48 48" className="h-8 w-8" fill="none">
-        <circle cx="24" cy="24" r="20" stroke="#0F4A78" strokeWidth="2.5" />
+        <circle cx="24" cy="17" r="6" stroke="#0F4A78" strokeWidth="2.5" />
         <path
-          d="M24 13V35M29.5 17C28.6 15.4 26.8 14.3 24.7 14.3C22.1 14.3 20 15.9 20 18.2C20 20.3 21.8 21.4 24.8 22.2C27.8 23 29.7 24.2 29.7 26.4C29.7 28.7 27.5 30.4 24.7 30.4C22.2 30.4 20.1 28.8 19.1 26.5"
-          stroke="#5FA6D8"
-          strokeWidth="2.2"
+          d="M10 40C10 32.8 16.3 27 24 27C31.7 27 38 32.8 38 40"
+          stroke="#0F4A78"
+          strokeWidth="2.5"
           strokeLinecap="round"
+          strokeLinejoin="round"
         />
+        <path
+          d="M20 30L24 34L28 30"
+          stroke="#5FA6D8"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <circle cx="30" cy="33" r="1.8" fill="#fbb03b" />
       </svg>
     );
   }
@@ -84,10 +93,21 @@ function FlowStepIcon({
   if (icon === "analisis") {
     return (
       <svg aria-hidden viewBox="0 0 48 48" className="h-8 w-8" fill="none">
-        <rect x="7" y="25" width="8" height="14" rx="2" stroke="#0F4A78" strokeWidth="2.5" />
-        <rect x="20" y="18" width="8" height="21" rx="2" stroke="#0F4A78" strokeWidth="2.5" />
-        <rect x="33" y="12" width="8" height="27" rx="2" stroke="#0F4A78" strokeWidth="2.5" />
-        <path d="M8 12L18 8L25 13L39 6" stroke="#5FA6D8" strokeWidth="2.5" strokeLinecap="round" />
+        <rect x="8" y="10" width="20" height="28" rx="2" stroke="#0F4A78" strokeWidth="2.5" />
+        <path
+          d="M12 18H24M12 24H22M12 30H20"
+          stroke="#5FA6D8"
+          strokeWidth="2"
+          strokeLinecap="round"
+        />
+        <circle cx="32" cy="30" r="8" stroke="#0F4A78" strokeWidth="2.5" />
+        <path
+          d="M37.5 35.5L42 40"
+          stroke="#0F4A78"
+          strokeWidth="2.5"
+          strokeLinecap="round"
+        />
+        <circle cx="32" cy="30" r="3" fill="#fbb03b" />
       </svg>
     );
   }
@@ -95,9 +115,21 @@ function FlowStepIcon({
   if (icon === "documentos") {
     return (
       <svg aria-hidden viewBox="0 0 48 48" className="h-8 w-8" fill="none">
-        <rect x="7" y="8" width="20" height="28" rx="3" stroke="#0F4A78" strokeWidth="2.5" />
-        <path d="M11 16H23M11 22H23M11 28H19" stroke="#5FA6D8" strokeWidth="2.3" strokeLinecap="round" />
-        <rect x="21" y="12" width="20" height="28" rx="3" stroke="#0F4A78" strokeWidth="2.5" />
+        <rect x="10" y="8" width="22" height="30" rx="2" stroke="#0F4A78" strokeWidth="2.5" />
+        <path
+          d="M14 16H28M14 22H26M14 28H22"
+          stroke="#5FA6D8"
+          strokeWidth="2"
+          strokeLinecap="round"
+        />
+        <circle cx="35" cy="34" r="6.5" fill="#fbb03b" stroke="#0F4A78" strokeWidth="1.8" />
+        <path
+          d="M31.8 34L34.2 36.4L38.2 31.2"
+          stroke="#0F4A78"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
       </svg>
     );
   }
@@ -105,17 +137,47 @@ function FlowStepIcon({
   if (icon === "pago") {
     return (
       <svg aria-hidden viewBox="0 0 48 48" className="h-8 w-8" fill="none">
-        <rect x="5" y="12" width="38" height="24" rx="5" stroke="#0F4A78" strokeWidth="2.5" />
-        <path d="M9 20H39M12 28H21" stroke="#5FA6D8" strokeWidth="2.3" strokeLinecap="round" />
-        <path d="M29 17V31" stroke="#0F4A78" strokeWidth="2.3" strokeLinecap="round" />
+        <path
+          d="M10 40V14L24 8L38 14V40"
+          stroke="#0F4A78"
+          strokeWidth="2.5"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M6 40H42"
+          stroke="#0F4A78"
+          strokeWidth="2.5"
+          strokeLinecap="round"
+        />
+        <rect x="14" y="18" width="4" height="4" stroke="#5FA6D8" strokeWidth="1.8" />
+        <rect x="22" y="18" width="4" height="4" stroke="#5FA6D8" strokeWidth="1.8" />
+        <rect x="30" y="18" width="4" height="4" stroke="#5FA6D8" strokeWidth="1.8" />
+        <rect x="14" y="26" width="4" height="4" stroke="#5FA6D8" strokeWidth="1.8" />
+        <rect x="22" y="26" width="4" height="4" stroke="#5FA6D8" strokeWidth="1.8" />
+        <rect x="30" y="26" width="4" height="4" stroke="#5FA6D8" strokeWidth="1.8" />
+        <circle cx="38" cy="10" r="4" fill="#fbb03b" stroke="#0F4A78" strokeWidth="1.5" />
       </svg>
     );
   }
 
   return (
     <svg aria-hidden viewBox="0 0 48 48" className="h-8 w-8" fill="none">
-      <circle cx="24" cy="24" r="20" stroke="#0F4A78" strokeWidth="2.5" />
-      <path d="M14 23H34M28 17L34 23L28 29" stroke="#5FA6D8" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+      <circle cx="24" cy="24" r="18" stroke="#0F4A78" strokeWidth="2.5" />
+      <path
+        d="M16 30L22 24L28 26L34 16"
+        stroke="#5FA6D8"
+        strokeWidth="2.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M29 16L34 16L34 21"
+        stroke="#5FA6D8"
+        strokeWidth="2.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <circle cx="34" cy="16" r="2.8" fill="#fbb03b" />
     </svg>
   );
 }
