@@ -4,6 +4,11 @@ Entradas breves. Formato: `## YYYY-MM-DD` y viñetas.
 
 ## 2026-04-23
 
+- Contacto (routing): se habilitó preselección por query (`/contacto?interes=inversiones|financiamiento`) y el formulario ahora autoselecciona el interés inicial al llegar desde CTAs contextuales.
+- Home/Inversiones/Financiamiento: los botones `Contacta a un asesor` vinculados a inversiones o financiamiento ahora redirigen a contacto con la preselección correspondiente; en contextos no específicos se mantiene `/contacto` sin preselección.
+- Contacto: la vista dejó el placeholder y ahora incluye hero institucional con copy de orientación comercial, acento amarillo de marca y fondo de imagen de stock (Unsplash) con overlays de contraste.
+- Contacto: nuevo formulario interactivo `Conversa con un asesor` con flujo local sin integración externa; al enviar muestra una vista de agradecimiento en la misma página.
+- Contacto (formulario): selector dinámico de opciones según interés (`Inversiones` o `Financiamiento`), campos solicitados (nombre, DNI, correo, celular, mensaje), aceptación de políticas y botón `Enviar` con estados de interacción/validación.
 - Gobierno corporativo: se reemplazó el placeholder por una sección completa de `Buen gobierno corporativo` inspirada en las referencias visuales, con bloque institucional, tarjetas de `Directorio`/`Oficial de Cumplimiento Corporativo`/`Comités` y panel de `Compromiso con grupos de interés`.
 - Gobierno corporativo (pilares): cards de `Directorio`, `Oficial de Cumplimiento Corporativo` y `Comités` estandarizadas con la misma estructura interna (zona de ícono, jerarquía de título, cuerpo y bloque de detalle) para lectura y alturas más coherentes.
 - Gobierno corporativo: se añadió como última sección `Nuestras alianzas` reutilizando el bloque de Home para mantener respaldo institucional y consistencia entre vistas.

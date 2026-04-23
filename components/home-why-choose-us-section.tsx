@@ -84,7 +84,7 @@ export function HomeWhyChooseUsSection() {
 
           <ScrollReveal direction="right" delayMs={180}>
             <Link
-              href="/contacto"
+              href="/contacto?interes=inversiones"
               className="inline-flex min-h-11 w-fit cursor-pointer items-center gap-2 rounded-full border border-white/45 bg-white px-5 py-2 text-sm font-semibold text-[#0f2d4e] transition-colors hover:bg-[#dbe9f6] active:bg-[#c8def2] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#c0deff] sm:min-h-12"
             >
               Contacta a un asesor

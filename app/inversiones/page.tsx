@@ -63,7 +63,7 @@ export default function InversionesPage() {
             <ScrollReveal direction="up" delayMs={250}>
               <div className="mt-8 sm:mt-10">
                 <Link
-                  href="/contacto"
+                  href="/contacto?interes=inversiones"
                   className="inline-flex min-h-11 cursor-pointer items-center justify-center gap-2 rounded-full bg-white px-6 py-2 text-sm font-semibold text-[#0f2d4e] transition-opacity hover:opacity-95 active:opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#c0deff] sm:min-h-12"
                 >
                   Contacta a un asesor
@@ -82,7 +82,7 @@ export default function InversionesPage() {
       <HomeMetricsSection
         showCta
         ctaLabel="Contacta a un asesor"
-        ctaHref="/contacto"
+        ctaHref="/contacto?interes=inversiones"
       />
     </main>
   );
