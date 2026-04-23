@@ -4,6 +4,9 @@ Entradas breves. Formato: `## YYYY-MM-DD` y viñetas.
 
 ## 2026-04-23
 
+- Inversiones (cards de productos): refinada la composición visual de `Fondo Medicash/Soles` y `Fondo Facturas Dólares` con layout más compacto y balanceado (fondo con gradiente suave, cápsula para ícono y CTA integrado), eliminando el vacío visual de la versión previa.
+- Inversiones (sección productos): se retiró el párrafo de propuesta competitiva/diversificada y las cards `Fondo Medicash/Soles` y `Fondo Facturas Dólares` quedaron en formato sintético (solo ícono + título) con accionable `Ver más`.
+- Inversiones (sección productos): el contenido descriptivo que estaba dentro de cada card ahora se muestra en un modal centrado al hacer click en `Ver más`, con cierre por botón, fondo o tecla `Escape`.
 - Nosotros (sección de soluciones): se retiraron los párrafos descriptivos de las cards `Inversiones` y `Financiamiento`, dejando un bloque más sintético para la opción de diseño 2.
 - Home (sección `Nosotros`): se retiró el párrafo descriptivo de las dos cards de acceso (`Inversiones` y `Financiamiento`) para un bloque más directo y limpio en la opción de diseño 2.
 - Home (`Por qué elegirnos`): las cards de `Experiencia probada y comprobada` quedaron simplificadas a solo ícono + título; se retiraron el texto adicional y el contenido revelado en hover/click.
