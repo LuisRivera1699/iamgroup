@@ -4,7 +4,12 @@ Entradas breves. Formato: `## YYYY-MM-DD` y viñetas.
 
 ## 2026-04-23
 
-- Home: nueva seccion compacta `Nuestras alianzas` debajo de `Nuestras cifras`, con fondo azul claro de seccion completa, logos de SBS/CAVALI centrados en mayor escala y tooltip flotante profesional en hover/focus con contexto institucional de cada alianza.
+- Home: se retiró el aviso textual bajo el hero sobre fotografías de fondo ilustrativas.
+- Footer: botón `Mis inversiones` reubicado debajo del logo para mejorar jerarquía visual y mantener consistencia con el header.
+- Global: nuevo `SiteFooter` simple/profesional en azul oscuro corporativo (`#0f2d4e`) con logo IAMGroup, enlaces de navegación y legales, botón `Mis inversiones` consistente con el header, copyright dinámico (`© año actual`) y crédito externo a Team Aurora.
+- Home: `Por que elegirnos` ajustada con fondo de imagen de stock gratuita (Unsplash) y overlay para legibilidad; se recupera el estilo claro de cards y la paleta original de iconos SVG.
+- Home: nueva seccion `Por que elegirnos` con encabezado + CTA a contacto y 3 cards resumidas (experiencia, resultados, seguridad) con iconos SVG propios; cada card revela detalle en hover/focus y al tocar en movil, con animacion de entrada por scroll.
+- Home: nueva seccion compacta `Nuestras alianzas` debajo de `Nuestras cifras`, con fondo azul claro de seccion completa, logos de SBS/CAVALI centrados en mayor escala, tooltip flotante profesional en hover/focus y animacion de entrada por scroll con `stagger` suave.
 - Home: se añadió un patrón reusable `ScrollReveal` para animar por scroll elementos internos del homepage (títulos, tarjetas, contenedores y CTAs en `nosotros` y `métricas`), más una entrada escalonada del contenido textual/acciones del hero; todo con respeto a `prefers-reduced-motion`.
 - Nueva regla `.cursor/rules/iamgroup-ui-scroll-entry-exit.mdc`: la animación se aplica por componente interno (no solo por sección), con `stagger` suave y transiciones sobrias ligadas al viewport.
 - Header: cambiado de `sticky` a **`fixed inset-x-0`** — resuelve (1) franja azul de `body` visible por el hack de margen negativo impreciso, (2) header siempre sólido en páginas internas porque el transparente sobre `body` se confundía con el color de fondo, y (3) menú móvil que empujaba el contenido en lugar de superponerse. Panel móvil con `bg-[#0f2d4e]` siempre explícito. `globals.css` define `--header-h` con `@media sm`. Páginas internas usan `pt-[calc(var(--header-h)+3rem)]`.

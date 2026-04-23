@@ -323,10 +323,6 @@ export function HomeHeroCarousel() {
           {`Diapositiva ${index + 1} de ${total}: ${SLIDES[index].title}`}
         </p>
       </section>
-      <p className="border-t border-[#1d3f62]/30 bg-gradient-to-b from-[#0a1624] to-[#0c2c50] px-4 py-2 text-center text-[0.7rem] text-[#8da1b8] sm:text-xs">
-        Fotografías de fondo con fines ilustrativos (Unsplash). No constituyen
-        oferta ni asesoría.
-      </p>
     </div>
   );
 }
