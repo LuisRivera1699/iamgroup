@@ -4,6 +4,7 @@ Entradas breves. Formato: `## YYYY-MM-DD` y viñetas.
 
 ## 2026-04-23
 
+- Contacto (build): `ContactoAdvisorFormSection` ahora se renderiza dentro de `Suspense` en `/contacto` para cumplir con Next.js al usar `useSearchParams` y evitar el fallo de prerender en despliegues estáticos de Vercel.
 - Gobierno corporativo (pilares): se eliminó el espacio vertical innecesario en mobile; la estandarización de altura y alineación del CTA se mantiene enfocada a desktop (`lg`) para evitar tarjetas estiradas.
 - Gobierno corporativo (pilares): refinada la alineación interna de cards con una franja superior uniforme (ícono+título) y CTA anclado al pie, para alinear visualmente los botones `Ver más` entre las tres tarjetas.
 - Gobierno corporativo (pilares): se estandarizó la altura de las cards de `Directorio`, `Oficial de Cumplimiento Corporativo` y `Comités` para que mantengan dimensiones uniformes en la misma fila.
