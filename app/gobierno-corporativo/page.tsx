@@ -45,18 +45,17 @@ export default function GobiernoCorporativoPage() {
 
             <ScrollReveal direction="left" delayMs={100}>
               <h1 className="mt-4 text-balance text-4xl font-semibold leading-[1.06] tracking-tight text-white sm:text-5xl lg:text-6xl">
-                Gobernanza que sostiene cada decisión con{" "}
+                Gobernanza que sostiene la{" "}
                 <span className="text-[#fbb03b]">
-                  criterio, trazabilidad y control.
-                </span>
+                  trascendencia y la sostenibilidad
+                </span>{" "}
+                de las inversiones.
               </h1>
             </ScrollReveal>
 
             <ScrollReveal direction="left" delayMs={190}>
               <p className="mt-6 max-w-2xl text-pretty text-base leading-relaxed text-[#d1deed] sm:text-lg">
-                En IAMGroup definimos responsabilidades, mecanismos de
-                supervisión y estándares de cumplimiento para operar con orden y
-                fortalecer la confianza de inversionistas, clientes y aliados.
+                Nuestra gobernanza combina dirección estratégica, supervisión regulatoria y comités especializados para proteger la operación y fortalecer la confianza de inversionistas, clientes y aliados.
               </p>
             </ScrollReveal>
 
