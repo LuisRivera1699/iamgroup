@@ -13,7 +13,7 @@ const SOLUTION_CARDS = [
     badge: "Para inversionistas",
     title: "Inversiones",
     description:
-      "Diseñamos alternativas para un portafolio diversificado, conservador y rentable según su perfil de riesgo.",
+      "Ofrecemos alternativas con portafolios diversificados, seguros y rentables.",
     highlights: ["Fondo Medicash/Soles", "Fondo Facturas Dólares"],
     href: "/inversiones",
     cta: "Ver inversiones",
@@ -24,7 +24,7 @@ const SOLUTION_CARDS = [
     badge: "Para empresas",
     title: "Financiamiento",
     description:
-      "Estructuramos soluciones oportunas y flexibles para impulsar crecimiento empresarial con ejecución ágil.",
+      "Contamos con productos que se adecuan a tus necesidades financieras para ayudarte a crecer.",
     highlights: [
       "Factoring",
       "Confirming",
@@ -39,32 +39,32 @@ const SOLUTION_CARDS = [
 
 const BOARD_MEMBERS = [
   {
-    id: "luis-castro",
-    name: "Luis Castro Echecopar",
-    role: "Director y Gerente General",
-    bio: "Más de 28 años en el sector financiero, con posiciones de dirección en BBVA, Santander, BanBif y SAFs. Ha liderado asesoría y estructuración financiera para CineStar y la Universidad San Juan Bautista, y fue Gerente y Director en B Time (representante de Casio y Swatch).",
-    image:
-      "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=1200&q=80",
-    linkedin:
-      "https://www.linkedin.com/search/results/people/?keywords=Luis%20Castro%20Echecopar",
-  },
-  {
     id: "eduardo-rosa",
     name: "Eduardo De La Rosa Cárdenas",
     role: "Presidente del Directorio",
-    bio: "Empresario con sólida trayectoria en salud e inmobiliario. Principal accionista de la Clínica Providencia y propietario de Constructora SCI SAC, con más de 20 años de experiencia en el mercado inmobiliario.",
+    bio: "Empresario con solida trayectoria en sector salud e inmobiliario. Principal accionista de la clínica Providencia y Constructora SCI.",
     image:
-      "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=1200&q=80",
+      "https://iamgroup.pe/wp-content/uploads/2024/03/Formato-Resena-Directores-01.png",
     linkedin:
       "https://www.linkedin.com/search/results/people/?keywords=Eduardo%20De%20La%20Rosa%20Cardenas",
+  },
+  {
+    id: "luis-castro",
+    name: "Luis Castro Echecopar",
+    role: "Director y Gerente General",
+    bio: "Director y Gerente General. Experiencia de más de 28 años en el sector financiero a liderado estructuraciones y operaciones sindicadas en diferentes empresas.",
+    image:
+      "https://iamgroup.pe/wp-content/uploads/2024/03/Formato-Resena-Directores-03.png",
+    linkedin:
+      "https://www.linkedin.com/search/results/people/?keywords=Luis%20Castro%20Echecopar",
   },
   {
     id: "eduardo-morales",
     name: "Eduardo Morales",
     role: "Director Corporativo",
-    bio: "Ejecutivo con experiencia en Interbank, BanBif, Banco Pichincha y Clínica San Borja. Actualmente preside el Directorio de Control Parking y participa en el comité de riesgos de Caja Huancayo. Exdecano de la Facultad de Economía de la Universidad de Lima.",
+    bio: "Director y comité de riesgos en caja Huancayo, exdecano de la Facultad de Economia de la universidad de Lima.",
     image:
-      "https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=1200&q=80",
+      "https://iamgroup.pe/wp-content/uploads/2024/03/Formato-Resena-Directores-02.png",
     linkedin:
       "https://www.linkedin.com/search/results/people/?keywords=Eduardo%20Morales%20director%20corporativo",
   },
@@ -136,15 +136,13 @@ export default function NosotrosPage() {
               <h1 className="mt-4 text-balance text-4xl font-semibold leading-[1.07] tracking-tight text-white sm:text-5xl lg:text-6xl">
                 Impulsamos{" "}
                 <span className="text-[#fbb03b]">crecimiento patrimonial</span>{" "}
-                con asesoría financiera de alto nivel.
+                con asesoría financiera
               </h1>
             </ScrollReveal>
 
             <ScrollReveal direction="left" delayMs={110}>
               <p className="mt-6 max-w-2xl text-pretty text-base leading-relaxed text-[#d1deed] sm:text-lg">
-                Brindamos soluciones empresariales y financiamientos a la
-                medida, respaldados por un equipo con más de 25 años de
-                experiencia en el sistema financiero.
+                Contamos con un equipo con más de 25 años de experiencia en el sistema financiero y empresarial.
               </p>
             </ScrollReveal>
 
@@ -170,23 +168,7 @@ export default function NosotrosPage() {
         className="relative z-20 -mt-12 pb-14 sm:-mt-16 sm:pb-16 lg:-mt-20 lg:pb-20"
       >
         <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
-          <ScrollReveal direction="up" delayMs={60}>
-            <div className="rounded-3xl border border-[#7e9ab8]/45 bg-[#123b66]/95 p-5 shadow-[0_24px_55px_-36px_rgba(7,18,34,0.95)] sm:p-7 lg:p-8">
-              <h2
-                id="nosotros-soluciones-title"
-                className="text-balance text-2xl font-semibold leading-tight tracking-tight text-white sm:text-3xl"
-              >
-                Soluciones financieras para crecer con confianza.
-              </h2>
-              <p className="mt-3 max-w-3xl text-sm leading-relaxed text-[#d1deed] sm:text-base">
-                Combinamos experiencia, asesoría estratégica y ejecución para
-                impulsar oportunidades de crecimiento patrimonial y acceso a
-                financiamiento a la medida.
-              </p>
-            </div>
-          </ScrollReveal>
-
-          <ul className="mt-4 grid gap-4 lg:grid-cols-2">
+          <ul className="grid gap-4 lg:grid-cols-2">
             {SOLUTION_CARDS.map((card, index) => {
               const isSky = card.tone === "sky";
 
@@ -253,6 +235,8 @@ export default function NosotrosPage() {
 
       <NosotrosDirectorySection members={BOARD_MEMBERS} />
 
+      <HomeMetricsSection showCta={false} />
+
       <section
         aria-labelledby="nosotros-core-title"
         className="bg-gradient-to-b from-[#f9fcff] via-[#f1f7fd] to-[#e2edf8] py-14 sm:py-16 lg:py-20"
@@ -269,8 +253,7 @@ export default function NosotrosPage() {
                 id="nosotros-core-title"
                 className="mt-3 text-balance text-3xl font-semibold leading-tight tracking-tight text-[#0f2d4e] sm:text-4xl"
               >
-                Arquitectura estratégica para decisiones financieras con
-                confianza.
+                Visión / Valores
               </h2>
             </ScrollReveal>
           </div>
@@ -346,15 +329,12 @@ export default function NosotrosPage() {
                 className="col-start-2 row-start-2 flex items-center justify-center"
               >
                 <div className="flex h-48 w-48 flex-col items-center justify-center rounded-full border-4 border-[#9fbddb] bg-[#0f2d4e] px-5 text-center shadow-[0_24px_48px_-32px_rgba(15,45,78,0.6)]">
-                  <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#c0deff]">
-                    Núcleo
-                  </p>
                   <Image
                     src={LOGO_IAM_URL}
                     alt="IAMGroup"
                     width={200}
                     height={56}
-                    className="mt-2 h-9 w-auto"
+                    className="h-9 w-auto"
                     sizes="140px"
                   />
                 </div>
@@ -416,7 +396,6 @@ export default function NosotrosPage() {
         </div>
       </section>
 
-      <HomeMetricsSection showCta={false} />
       <HomeAlliancesSection />
     </main>
   );

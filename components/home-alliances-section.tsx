@@ -26,17 +26,18 @@ export function HomeAlliancesSection() {
       aria-labelledby="home-alliances-title"
       className="border-t border-[#88aaca]/45 bg-gradient-to-b from-[#abcbe8] to-[#95badc]"
     >
-      <div className="mx-auto w-full max-w-7xl px-4 py-9 sm:px-6 sm:py-10 lg:px-8">
-        <ScrollReveal direction="up" delayMs={0}>
-          <h2
-            id="home-alliances-title"
-            className="text-center text-[0.7rem] font-semibold uppercase tracking-[0.24em] text-[#143c69]"
-          >
-            Nuestras alianzas
-          </h2>
-        </ScrollReveal>
+      <div className="mx-auto w-full max-w-7xl px-4 py-6 sm:px-6 sm:py-7 lg:px-8">
+        <div className="flex flex-col items-start gap-6 sm:flex-row sm:items-center sm:gap-12 lg:gap-16">
+          <ScrollReveal direction="left" delayMs={0}>
+            <h2
+              id="home-alliances-title"
+              className="text-[0.7rem] font-semibold uppercase tracking-[0.24em] text-[#143c69] sm:whitespace-nowrap"
+            >
+              Nuestras alianzas
+            </h2>
+          </ScrollReveal>
 
-        <ul className="mt-6 flex flex-col items-center justify-center gap-10 sm:flex-row sm:gap-20">
+          <ul className="flex flex-1 flex-col items-center justify-center gap-8 sm:flex-row sm:gap-16">
           {alliances.map((alliance, index) => (
             <li key={alliance.id} className="relative flex items-center justify-center">
               <ScrollReveal direction="up" delayMs={90 + index * 90}>
@@ -63,7 +64,8 @@ export function HomeAlliancesSection() {
               </ScrollReveal>
             </li>
           ))}
-        </ul>
+          </ul>
+        </div>
       </div>
     </section>
   );
