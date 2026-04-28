@@ -45,18 +45,9 @@ export default function FinanciamientoPage() {
 
             <ScrollReveal direction="left" delayMs={90}>
               <h1 className="mt-4 text-balance text-4xl font-semibold leading-[1.07] tracking-tight text-white sm:text-5xl lg:text-6xl">
-                Impulsa tu empresa con{" "}
-                <span className="text-[#fbb03b]">liquidez estratégica</span> y
-                financiamiento a medida.
+                Impulsa tu empresa{" "}
+                <span className="text-[#fbb03b]">obteniendo liquidez</span> en el momento oportuno.
               </h1>
-            </ScrollReveal>
-
-            <ScrollReveal direction="left" delayMs={180}>
-              <p className="mt-6 max-w-2xl text-pretty text-base leading-relaxed text-[#d1deed] sm:text-lg">
-                Estructuramos soluciones flexibles para capital de trabajo y
-                crecimiento operativo, con evaluación financiera rigurosa y
-                trazabilidad de pago.
-              </p>
             </ScrollReveal>
 
             <ScrollReveal direction="up" delayMs={250}>
