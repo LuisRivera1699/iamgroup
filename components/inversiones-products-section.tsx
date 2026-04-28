@@ -1,27 +1,24 @@
 import Image from "next/image";
+import { InversionesCapitalFlowDiagram } from "@/components/inversiones-capital-flow-section";
 import { ScrollReveal } from "@/components/scroll-reveal";
 
 const INVESTMENT_PRODUCTS = [
   {
     id: "medicash-soles",
-    title: "Fondo Medicash/Soles",
+    title: "Fondo Medicash",
     summary:
-      "Financia la emisión de facturas y recibos de médicos por servicios en clínicas privadas.",
-    detail:
-      "El repago proviene de facturas emitidas a aseguradoras como Pacífico, Rímac, Mapfre y La Positiva, con confirmación de pago por clínica privada y plazo promedio de 60 días.",
-    points: ["Operación de corto plazo", "Plazo promedio: 60 días"],
+      "Financia la emisión de facturas, recibos y órdenes de compra de empresas calificadas.",
+    points: ["Operaciones de corto plazo", "Mas de 60 Inversionistas en el Fondo"],
     iconSrc: "/icons/inversiones/fondo-medicash-soles.svg",
     iconWidth: 176,
     iconHeight: 120,
   },
   {
     id: "facturas-dolares",
-    title: "Fondo Facturas Dólares",
+    title: "Fondo Dólares",
     summary:
-      "Financia facturas emitidas y reconocidas por empresas con la más alta calificación crediticia (AAA).",
-    detail:
-      "Se valida el riesgo crediticio con Sentinel (SBS) y FINEXO de la Bolsa de Valores de Lima, complementado con evaluación de estados financieros para reforzar control y consistencia.",
-    points: ["Obligados de primer nivel", "Plazo promedio: 60 días"],
+      "Financia facturas y órdenes de compra emitidas y reconocidas por empresas con la más alta calificación crediticia.",
+    points: ["Operaciones de corto plazo", "Mas de 60 Inversionistas en el Fondo"],
     iconSrc: "/icons/inversiones/fondo-facturas-dolares.svg",
     iconWidth: 176,
     iconHeight: 120,
@@ -45,10 +42,10 @@ export function InversionesProductsSection() {
               className="mt-3 text-balance text-3xl font-semibold leading-tight tracking-tight sm:text-4xl lg:text-5xl"
             >
               <span className="text-[#fbb03b]">
-                Haz que tu capital avance con propósito.
+                Haz que tu capital crezca.
               </span>{" "}
               <span className="text-[#0f2d4e]">
-                Estrategias de inversión respaldadas por economía real.
+                Respaldado por economía real.
               </span>
             </h2>
             <p className="mt-4 max-w-5xl text-sm leading-relaxed text-[#1d3f62] sm:text-base">
@@ -117,14 +114,13 @@ export function InversionesProductsSection() {
                     ))}
                   </ul>
 
-                  <div className="mt-4 rounded-xl border border-[#b8d0e5] bg-[#edf5fc] px-4 py-3 text-sm leading-relaxed text-[#1d3f62]">
-                    {product.detail}
-                  </div>
                 </article>
               </li>
             </ScrollReveal>
           ))}
         </ul>
+
+        <InversionesCapitalFlowDiagram variant="light" />
       </div>
     </section>
   );

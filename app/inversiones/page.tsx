@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { InversionesCapitalFlowSection } from "@/components/inversiones-capital-flow-section";
 import { InversionesProductsSection } from "@/components/inversiones-products-section";
 import { HomeMetricsSection } from "@/components/home-metrics-section";
 import { ScrollReveal } from "@/components/scroll-reveal";
@@ -48,16 +47,8 @@ export default function InversionesPage() {
               <h1 className="mt-4 text-balance text-4xl font-semibold leading-[1.07] tracking-tight text-white sm:text-5xl lg:text-6xl">
                 Potencia tu{" "}
                 <span className="text-[#fbb03b]">crecimiento patrimonial</span>{" "}
-                con estrategia y visión de largo plazo.
+                con pilares de seguridad, liquidez y rentabilidad.
               </h1>
-            </ScrollReveal>
-
-            <ScrollReveal direction="left" delayMs={180}>
-              <p className="mt-6 max-w-2xl text-pretty text-base leading-relaxed text-[#d1deed] sm:text-lg">
-                Diseñamos alternativas de inversión para perfiles que buscan
-                preservar capital, diversificar riesgo y construir rentabilidad
-                sostenible en el tiempo.
-              </p>
             </ScrollReveal>
 
             <ScrollReveal direction="up" delayMs={250}>
@@ -78,7 +69,6 @@ export default function InversionesPage() {
       </section>
 
       <InversionesProductsSection />
-      <InversionesCapitalFlowSection />
       <HomeMetricsSection
         showCta
         ctaLabel="Contacta a un asesor"

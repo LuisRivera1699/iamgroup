@@ -182,6 +182,92 @@ function FlowStepIcon({
   );
 }
 
+type CapitalFlowDiagramProps = {
+  variant?: "dark" | "light";
+};
+
+export function InversionesCapitalFlowDiagram({
+  variant = "dark",
+}: CapitalFlowDiagramProps) {
+  const isLight = variant === "light";
+
+  return (
+    <ScrollReveal direction="up" delayMs={120}>
+      <div
+        className={[
+          "mt-8 rounded-3xl border p-4 shadow-[0_24px_58px_-34px_rgba(3,12,22,0.9)] sm:p-6",
+          isLight
+            ? "border-[#c2d9ec] bg-[#0f2d4e] shadow-[0_24px_52px_-34px_rgba(15,45,78,0.5)]"
+            : "border-[#88aaca]/45 bg-[#0b2743]/72 backdrop-blur-sm",
+        ].join(" ")}
+      >
+        <h3 className="text-center text-xl font-semibold uppercase tracking-[0.08em] text-[#c0deff] sm:text-2xl">
+          Flujo del capital
+        </h3>
+
+        <div className="mt-6 hidden items-center gap-2 lg:flex">
+          {CAPITAL_FLOW_STEPS.map((step, index) => (
+            <div key={step.id} className="flex min-w-0 flex-1 items-center gap-2">
+              <article className="min-h-[14rem] flex-1 rounded-2xl border border-[#8fb2d5]/45 bg-white/95 p-4 text-center shadow-[0_14px_32px_-24px_rgba(11,31,53,0.55)]">
+                <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full border-2 border-[#1d5fa4]/80 bg-[#f4f9ff]">
+                  <FlowStepIcon icon={step.icon} />
+                </div>
+                <p className="mt-3 text-3xl font-semibold leading-none text-[#1d5fa4]">
+                  {step.number}
+                </p>
+                <p className="mt-2 text-xs font-semibold uppercase tracking-[0.12em] text-[#1d3f62]">
+                  {step.actor}
+                </p>
+                <p className="mt-2 text-sm font-medium leading-snug text-[#0f2d4e]">
+                  {step.title}
+                </p>
+              </article>
+              {index < CAPITAL_FLOW_STEPS.length - 1 ? (
+                <span
+                  aria-hidden
+                  className="shrink-0 text-2xl font-bold text-[#fbb03b]"
+                >
+                  →
+                </span>
+              ) : null}
+            </div>
+          ))}
+        </div>
+
+        <ul className="mt-6 space-y-3 lg:hidden">
+          {CAPITAL_FLOW_STEPS.map((step, index) => (
+            <li key={step.id}>
+              <article className="rounded-2xl border border-[#8fb2d5]/45 bg-white/95 p-4 shadow-[0_14px_32px_-24px_rgba(11,31,53,0.55)]">
+                <div className="flex items-center gap-3">
+                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border-2 border-[#1d5fa4]/80 bg-[#f4f9ff]">
+                    <FlowStepIcon icon={step.icon} />
+                  </div>
+                  <div>
+                    <p className="text-xl font-semibold leading-none text-[#1d5fa4]">
+                      {step.number}
+                    </p>
+                    <p className="mt-1 text-xs font-semibold uppercase tracking-[0.12em] text-[#1d3f62]">
+                      {step.actor}
+                    </p>
+                  </div>
+                </div>
+                <p className="mt-3 text-sm font-medium leading-snug text-[#0f2d4e]">
+                  {step.title}
+                </p>
+              </article>
+              {index < CAPITAL_FLOW_STEPS.length - 1 ? (
+                <div className="my-2 flex justify-center text-xl font-bold text-[#fbb03b]">
+                  ↓
+                </div>
+              ) : null}
+            </li>
+          ))}
+        </ul>
+      </div>
+    </ScrollReveal>
+  );
+}
+
 export function InversionesCapitalFlowSection() {
   return (
     <section
@@ -231,72 +317,7 @@ export function InversionesCapitalFlowSection() {
           </ScrollReveal>
         </div>
 
-        <ScrollReveal direction="up" delayMs={120}>
-          <div className="mt-8 rounded-3xl border border-[#88aaca]/45 bg-[#0b2743]/72 p-4 shadow-[0_24px_58px_-34px_rgba(3,12,22,0.9)] backdrop-blur-sm sm:p-6">
-            <h3 className="text-center text-xl font-semibold uppercase tracking-[0.08em] text-[#c0deff] sm:text-2xl">
-              Flujo del capital
-            </h3>
-
-            <div className="mt-6 hidden items-center gap-2 lg:flex">
-              {CAPITAL_FLOW_STEPS.map((step, index) => (
-                <div key={step.id} className="flex min-w-0 flex-1 items-center gap-2">
-                  <article className="min-h-[14rem] flex-1 rounded-2xl border border-[#8fb2d5]/45 bg-white/95 p-4 text-center shadow-[0_14px_32px_-24px_rgba(11,31,53,0.55)]">
-                    <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full border-2 border-[#1d5fa4]/80 bg-[#f4f9ff]">
-                      <FlowStepIcon icon={step.icon} />
-                    </div>
-                    <p className="mt-3 text-3xl font-semibold leading-none text-[#1d5fa4]">
-                      {step.number}
-                    </p>
-                    <p className="mt-2 text-xs font-semibold uppercase tracking-[0.12em] text-[#1d3f62]">
-                      {step.actor}
-                    </p>
-                    <p className="mt-2 text-sm font-medium leading-snug text-[#0f2d4e]">
-                      {step.title}
-                    </p>
-                  </article>
-                  {index < CAPITAL_FLOW_STEPS.length - 1 ? (
-                    <span
-                      aria-hidden
-                      className="shrink-0 text-2xl font-bold text-[#fbb03b]"
-                    >
-                      →
-                    </span>
-                  ) : null}
-                </div>
-              ))}
-            </div>
-
-            <ul className="mt-6 space-y-3 lg:hidden">
-              {CAPITAL_FLOW_STEPS.map((step, index) => (
-                <li key={step.id}>
-                  <article className="rounded-2xl border border-[#8fb2d5]/45 bg-white/95 p-4 shadow-[0_14px_32px_-24px_rgba(11,31,53,0.55)]">
-                    <div className="flex items-center gap-3">
-                      <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border-2 border-[#1d5fa4]/80 bg-[#f4f9ff]">
-                        <FlowStepIcon icon={step.icon} />
-                      </div>
-                      <div>
-                        <p className="text-xl font-semibold leading-none text-[#1d5fa4]">
-                          {step.number}
-                        </p>
-                        <p className="mt-1 text-xs font-semibold uppercase tracking-[0.12em] text-[#1d3f62]">
-                          {step.actor}
-                        </p>
-                      </div>
-                    </div>
-                    <p className="mt-3 text-sm font-medium leading-snug text-[#0f2d4e]">
-                      {step.title}
-                    </p>
-                  </article>
-                  {index < CAPITAL_FLOW_STEPS.length - 1 ? (
-                    <div className="my-2 flex justify-center text-xl font-bold text-[#fbb03b]">
-                      ↓
-                    </div>
-                  ) : null}
-                </li>
-              ))}
-            </ul>
-          </div>
-        </ScrollReveal>
+        <InversionesCapitalFlowDiagram />
 
         <ScrollReveal direction="up" delayMs={170}>
           <div className="mt-6 rounded-2xl border border-[#b8d0e5]/65 bg-white p-5 shadow-[0_18px_38px_-28px_rgba(7,22,37,0.7)] sm:p-6">
