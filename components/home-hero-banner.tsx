@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 /** Imagen empresarial desde Unsplash (licencia Unsplash); no usar `references/` como origen en código. */
-const HERO_IMAGE = "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=2000&q=80";
+const HERO_IMAGE = "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=2000&q=80";
 
 export function HomeHeroBanner() {
   return (
