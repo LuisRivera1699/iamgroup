@@ -97,9 +97,7 @@ export function HomeAboutEntrySection() {
                 <article
                   className={[
                     "flex min-h-64 h-full flex-col rounded-3xl border p-6 shadow-[0_22px_55px_-36px_rgba(31,74,123,0.5)] sm:p-7",
-                    isSky
-                      ? "border-[#96bde6] bg-[#d1deed] text-[#0f2d4e]"
-                      : "border-[#7e9ab8] bg-[#bbcadb] text-[#0f2d4e]",
+                    "border-[#0f2d4e] bg-[#d1deed] text-[#0f2d4e]",
                   ].join(" ")}
                 >
                   <p
