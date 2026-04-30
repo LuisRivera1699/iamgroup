@@ -4,6 +4,7 @@ Entradas breves. Formato: `## YYYY-MM-DD` y viñetas.
 
 ## 2026-04-29
 
+- Gobierno corporativo (comités): añadida la sección `Nuestros comités` debajo de los cards principales, con gráfico circular seccionado en tres, conectores visuales, bullets revelados en hover/focus e iconos SVG propios para Directorio, Vigilancia e Inversiones.
 - Gobierno corporativo (estructura): eliminado el card de comités, removido el botón "Ver comités" y el modal completo asociado; solo se mantienen los cards de "Directorio" y "Oficial de Cumplimiento Corporativo" con fondo `#d1deed` y borde `#0f2d4e` (color del texto).
 - Inversiones/Financiamiento: las secciones de productos conservan degradado y ahora funden el inicio con el hero antes de transicionar desde `#0f2d4e` hacia azules claros corporativos (`#c8e2ff` y `#d1deed`), evitando divisiones visibles y cierres casi blancos.
 - Nosotros (Visión / Valores): se reorganizó el diagrama para mostrar `Visión` como tarjeta superior y los valores `Transparencia`, `Integridad`, `Pasión` y `Enfoque en resultados` como tarjetas con fondo azul claro `#d1deed`, conectores alineados y bordes azul oscuro sólido/discontinuo según jerarquía.
