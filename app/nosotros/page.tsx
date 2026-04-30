@@ -7,7 +7,18 @@ import { NosotrosDirectorySection } from "@/components/nosotros-directory-sectio
 import { ScrollReveal } from "@/components/scroll-reveal";
 import { LOGO_IAM_URL } from "@/lib/site";
 
-const SOLUTION_CARDS = [
+type SolutionCard = {
+  id: string;
+  badge: string;
+  title: string;
+  description: string;
+  highlights: readonly string[];
+  href: string;
+  cta: string;
+  tone: "navy" | "sky";
+};
+
+const SOLUTION_CARDS: readonly SolutionCard[] = [
   {
     id: "inversiones",
     badge: "Para inversionistas",
