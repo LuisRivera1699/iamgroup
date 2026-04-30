@@ -33,7 +33,7 @@ export function InversionesProductsSection() {
     >
       <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
         <ScrollReveal direction="up" delayMs={40}>
-          <div className="rounded-3xl border border-[#c2d9ec] bg-white/95 p-5 shadow-[0_24px_52px_-34px_rgba(15,45,78,0.45)] sm:p-7 lg:p-8">
+          <div className="rounded-3xl border border-[#0f2d4e] bg-[#d1deed] p-5 shadow-[0_24px_52px_-34px_rgba(15,45,78,0.45)] sm:p-7 lg:p-8">
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#1d3f62]">
               Para inversionistas
             </p>
@@ -82,7 +82,7 @@ export function InversionesProductsSection() {
               className="h-full"
             >
               <li className="h-full">
-                <article className="flex h-full flex-col rounded-2xl border border-[#c2d9ec] bg-white p-5 text-left shadow-[0_20px_42px_-30px_rgba(15,45,78,0.38)] sm:p-6">
+                <article className="flex h-full flex-col rounded-2xl border border-[#0f2d4e] bg-[#d1deed] p-5 text-left shadow-[0_20px_42px_-30px_rgba(15,45,78,0.38)] sm:p-6">
                   <div className="flex items-start gap-4">
                     <Image
                       src={product.iconSrc}

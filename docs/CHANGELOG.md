@@ -7,6 +7,10 @@ Entradas breves. Formato: `## YYYY-MM-DD` y viñetas.
 - Nosotros (Visión / Valores): se reorganizó el diagrama para mostrar `Visión` como tarjeta superior y los valores `Transparencia`, `Integridad`, `Pasión` y `Enfoque en resultados` como tarjetas con fondo azul claro `#d1deed`, conectores alineados y bordes azul oscuro sólido/discontinuo según jerarquía.
 - Home (hero): se ajustó la escala visual para acercarla al hero de Gobierno corporativo, con altura más compacta, título `4xl/6xl`, highlight amarillo corporativo en la frase clave y animación por piezas internas.
 - Home (métricas): la animación de números ahora se ejecuta cada vez que la sección entra en pantalla, no solo en la primera aparición. Los números se reinician a 0 cuando salen del viewport y vuelven a animar al regresar.
+- Home (alianzas): reducido el tamaño de los logos de SBS y Cavali para hacer la sección más compacta (de `h-14/16/20` a `h-10/12/14` según breakpoint) y aumentado el tamaño del título "Nuestras alianzas" en 2px (de `0.7rem` a `0.825rem`).
+- Nosotros (directorio): eliminado espacio innecesario en las tarjetas de miembros del directorio removiendo la altura fija del contenedor de información.
+- Inversiones: cambiado el color de fondo de los cards "Para inversionistas", "Fondo Medicash" y "Fondo Dólares" a `#d1deed` (azul claro corporativo) y actualizado el borde a `#0f2d4e` (color del texto principal).
+- Inversiones (Flujo del capital): se compactó el diagrama manteniendo las 5 tarjetas, con cabecera horizontal por paso (icono, número y actor), menor padding, tipografía, flechas y altura visual para reducir su presencia dentro de la sección.
 
 ## 2026-04-23
 

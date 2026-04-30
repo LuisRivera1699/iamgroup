@@ -24,14 +24,14 @@ export function HomeAlliancesSection() {
   return (
     <section
       aria-labelledby="home-alliances-title"
-      className="border-t border-[#88aaca]/45 bg-gradient-to-b from-[#abcbe8] to-[#95badc]"
+      className="relative z-30 border-t border-[#88aaca]/45 bg-gradient-to-b from-[#abcbe8] to-[#95badc]"
     >
       <div className="mx-auto w-full max-w-7xl px-4 py-6 sm:px-6 sm:py-7 lg:px-8">
         <div className="flex flex-col items-start gap-6 sm:flex-row sm:items-center sm:gap-12 lg:gap-16">
           <ScrollReveal direction="left" delayMs={0}>
             <h2
               id="home-alliances-title"
-              className="text-[0.7rem] font-semibold uppercase tracking-[0.24em] text-[#143c69] sm:whitespace-nowrap"
+              className="text-[0.825rem] font-semibold uppercase tracking-[0.24em] text-[#143c69] sm:whitespace-nowrap"
             >
               Nuestras alianzas
             </h2>
@@ -51,12 +51,12 @@ export function HomeAlliancesSection() {
                     alt={`Logo de ${alliance.name}`}
                     width={alliance.logoWidth}
                     height={alliance.logoHeight}
-                    sizes="(min-width: 1024px) 340px, (min-width: 640px) 280px, 220px"
-                    className="h-14 w-auto object-contain sm:h-16 lg:h-20"
+                    sizes="(min-width: 1024px) 240px, (min-width: 640px) 200px, 160px"
+                    className="h-10 w-auto object-contain sm:h-12 lg:h-14"
                   />
                   <figcaption
                     role="tooltip"
-                    className="pointer-events-none absolute bottom-full left-1/2 z-10 mb-3 w-[min(18rem,85vw)] -translate-x-1/2 translate-y-1 rounded-lg border border-[#9fc2e3]/45 bg-[#0f2d4e] px-3 py-2 text-center text-xs font-medium leading-snug text-[#e6f2ff] opacity-0 shadow-[0_16px_36px_-20px_rgba(7,15,29,0.95)] transition-all duration-200 group-hover:translate-y-0 group-hover:opacity-100 group-focus-visible:translate-y-0 group-focus-visible:opacity-100"
+                    className="pointer-events-none absolute bottom-full left-1/2 z-50 mb-3 w-[min(18rem,85vw)] -translate-x-1/2 translate-y-1 rounded-lg border border-[#9fc2e3]/45 bg-[#0f2d4e] px-3 py-2 text-center text-xs font-medium leading-snug text-[#e6f2ff] opacity-0 shadow-[0_16px_36px_-20px_rgba(7,15,29,0.95)] transition-all duration-200 group-hover:translate-y-0 group-hover:opacity-100 group-focus-visible:translate-y-0 group-focus-visible:opacity-100"
                   >
                     {alliance.tooltip}
                   </figcaption>

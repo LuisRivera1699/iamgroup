@@ -55,7 +55,7 @@ function DirectoryCard({ member }: { member: BoardMember }) {
         </p>
       </div>
 
-      <div className="mt-4 grid h-[5.6rem] grid-cols-[1fr_auto] items-start gap-4 sm:h-[6rem]">
+      <div className="mt-4 grid grid-cols-[1fr_auto] items-start gap-4">
         <div className="min-w-0">
           <h3 className="line-clamp-2 text-xl font-semibold leading-tight text-[#0f2d4e]">
             {member.name}

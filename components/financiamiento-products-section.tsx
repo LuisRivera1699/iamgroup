@@ -61,7 +61,7 @@ export function FinanciamientoProductsSection() {
               className="h-full"
             >
               <li className="h-full">
-                <article className="flex h-full flex-col rounded-2xl border border-[#c2d9ec] bg-white p-5 text-left shadow-[0_20px_42px_-30px_rgba(15,45,78,0.38)] sm:p-6">
+                <article className="flex h-full flex-col rounded-2xl border border-[#0f2d4e] bg-[#d1deed] p-5 text-left shadow-[0_20px_42px_-30px_rgba(15,45,78,0.38)] sm:p-6">
                   <div className="flex items-start gap-4">
                     <Image
                       src={product.iconSrc}
