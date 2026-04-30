@@ -17,7 +17,7 @@ const SOLUTION_CARDS = [
     highlights: ["Fondo Medicash/Soles", "Fondo Facturas Dólares"],
     href: "/inversiones",
     cta: "Ver inversiones",
-    tone: "sky",
+    tone: "navy",
   },
   {
     id: "financiamiento",
@@ -141,7 +141,7 @@ export default function NosotrosPage() {
             </ScrollReveal>
 
             <ScrollReveal direction="left" delayMs={110}>
-              <p className="mt-6 max-w-2xl text-pretty text-base leading-relaxed text-[#d1deed] sm:text-lg">
+              <p className="mt-6 max-w-2xl text-pretty text-lg leading-relaxed text-white sm:text-xl">
                 Contamos con un equipo con más de 25 años de experiencia en el sistema financiero y empresarial.
               </p>
             </ScrollReveal>

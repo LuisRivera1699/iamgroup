@@ -2,6 +2,10 @@
 
 Entradas breves. Formato: `## YYYY-MM-DD` y viñetas.
 
+## 2026-04-29
+
+- Home (hero): se ajustó la escala visual para acercarla al hero de Gobierno corporativo, con altura más compacta, título `4xl/6xl`, highlight amarillo corporativo en la frase clave y animación por piezas internas.
+
 ## 2026-04-23
 
 - Contacto (build): `ContactoAdvisorFormSection` ahora se renderiza dentro de `Suspense` en `/contacto` para cumplir con Next.js al usar `useSearchParams` y evitar el fallo de prerender en despliegues estáticos de Vercel.
