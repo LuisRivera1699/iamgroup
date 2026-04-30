@@ -89,9 +89,6 @@ export function SiteHeader() {
               </Link>
             );
           })}
-        </nav>
-
-        <div className="hidden items-center gap-3 lg:flex">
           <a
             href={INVESTOR_PORTAL_URL}
             className="inline-flex items-center justify-center rounded-full bg-white px-4 py-2.5 text-sm font-semibold text-[#0f2d4e] transition-opacity hover:opacity-95 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
@@ -100,7 +97,7 @@ export function SiteHeader() {
           >
             Mis inversiones
           </a>
-        </div>
+        </nav>
 
         <div className="lg:hidden">
           <button

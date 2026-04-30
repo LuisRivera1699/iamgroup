@@ -208,7 +208,7 @@ export function InversionesCapitalFlowDiagram({
         <div className="mt-4 hidden items-center gap-1.5 lg:flex">
           {CAPITAL_FLOW_STEPS.map((step, index) => (
             <div key={step.id} className="flex min-w-0 flex-1 items-center gap-1.5">
-              <article className="min-h-[7.5rem] flex-1 rounded-xl border border-[#8fb2d5]/45 bg-white/95 p-3 text-left shadow-[0_10px_24px_-20px_rgba(11,31,53,0.5)]">
+              <article className="min-h-[7.5rem] flex-1 rounded-xl border border-[#8fb2d5]/45 bg-[#d1deed] p-3 text-left shadow-[0_10px_24px_-20px_rgba(11,31,53,0.5)]">
                 <div className="flex items-center gap-2">
                   <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border-2 border-[#1d5fa4]/80 bg-[#f4f9ff]">
                     <FlowStepIcon icon={step.icon} />
@@ -241,7 +241,7 @@ export function InversionesCapitalFlowDiagram({
         <ul className="mt-4 space-y-2 lg:hidden">
           {CAPITAL_FLOW_STEPS.map((step, index) => (
             <li key={step.id}>
-              <article className="rounded-xl border border-[#8fb2d5]/45 bg-white/95 p-3 shadow-[0_10px_24px_-20px_rgba(11,31,53,0.5)]">
+              <article className="rounded-xl border border-[#8fb2d5]/45 bg-[#d1deed] p-3 shadow-[0_10px_24px_-20px_rgba(11,31,53,0.5)]">
                 <div className="flex items-center gap-2.5">
                   <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border-2 border-[#1d5fa4]/80 bg-[#f4f9ff]">
                     <FlowStepIcon icon={step.icon} />
