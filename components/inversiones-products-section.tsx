@@ -29,7 +29,7 @@ export function InversionesProductsSection() {
   return (
     <section
       aria-labelledby="inversiones-productos-title"
-      className="relative z-20 -mt-16 bg-gradient-to-b from-transparent via-[#edf5fc] to-[#f8fbff] pb-14 pt-4 sm:-mt-20 sm:pb-16 sm:pt-6 lg:-mt-24 lg:pb-20 lg:pt-8"
+      className="relative z-20 -mt-16 bg-[linear-gradient(to_bottom,transparent_0%,#0f2d4e_22%,#7e9ab8_58%,#c8e2ff_82%,#d1deed_100%)] pb-14 pt-4 sm:-mt-20 sm:pb-16 sm:pt-6 lg:-mt-24 lg:pb-20 lg:pt-8"
     >
       <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
         <ScrollReveal direction="up" delayMs={40}>

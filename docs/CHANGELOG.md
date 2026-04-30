@@ -4,6 +4,8 @@ Entradas breves. Formato: `## YYYY-MM-DD` y viñetas.
 
 ## 2026-04-29
 
+- Gobierno corporativo (estructura): eliminado el card de comités, removido el botón "Ver comités" y el modal completo asociado; solo se mantienen los cards de "Directorio" y "Oficial de Cumplimiento Corporativo" con fondo `#d1deed` y borde `#0f2d4e` (color del texto).
+- Inversiones/Financiamiento: las secciones de productos conservan degradado y ahora funden el inicio con el hero antes de transicionar desde `#0f2d4e` hacia azules claros corporativos (`#c8e2ff` y `#d1deed`), evitando divisiones visibles y cierres casi blancos.
 - Nosotros (Visión / Valores): se reorganizó el diagrama para mostrar `Visión` como tarjeta superior y los valores `Transparencia`, `Integridad`, `Pasión` y `Enfoque en resultados` como tarjetas con fondo azul claro `#d1deed`, conectores alineados y bordes azul oscuro sólido/discontinuo según jerarquía.
 - Home (hero): se ajustó la escala visual para acercarla al hero de Gobierno corporativo, con altura más compacta, título `4xl/6xl`, highlight amarillo corporativo en la frase clave y animación por piezas internas.
 - Home (métricas): la animación de números ahora se ejecuta cada vez que la sección entra en pantalla, no solo en la primera aparición. Los números se reinician a 0 cuando salen del viewport y vuelven a animar al regresar.
