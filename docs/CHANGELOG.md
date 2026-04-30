@@ -6,6 +6,7 @@ Entradas breves. Formato: `## YYYY-MM-DD` y viñetas.
 
 - Nosotros (Visión / Valores): se reorganizó el diagrama para mostrar `Visión` como tarjeta superior y los valores `Transparencia`, `Integridad`, `Pasión` y `Enfoque en resultados` como tarjetas con fondo azul claro `#d1deed`, conectores alineados y bordes azul oscuro sólido/discontinuo según jerarquía.
 - Home (hero): se ajustó la escala visual para acercarla al hero de Gobierno corporativo, con altura más compacta, título `4xl/6xl`, highlight amarillo corporativo en la frase clave y animación por piezas internas.
+- Home (métricas): la animación de números ahora se ejecuta cada vez que la sección entra en pantalla, no solo en la primera aparición. Los números se reinician a 0 cuando salen del viewport y vuelven a animar al regresar.
 
 ## 2026-04-23
 

@@ -40,7 +40,11 @@ function CountUpNumber({
   const reducedMotion = usePrefersReducedMotion();
 
   useEffect(() => {
-    if (!start) return;
+    if (!start) {
+      setValue(0);
+      return;
+    }
+    
     if (reducedMotion) {
       setValue(to);
       return;
@@ -91,31 +95,32 @@ export function HomeMetricsSection({
   ctaHref = "/nosotros",
 }: HomeMetricsSectionProps) {
   const sectionRef = useRef<HTMLElement | null>(null);
-  const [hasEntered, setHasEntered] = useState(false);
+  const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    if (hasEntered) return;
     const node = sectionRef.current;
     if (!node) return;
     if (typeof window === "undefined" || !("IntersectionObserver" in window)) {
-      setHasEntered(true);
+      setIsVisible(true);
       return;
     }
 
     const observer = new IntersectionObserver(
       (entries) => {
         const entry = entries[0];
-        if (entry?.isIntersecting) {
-          setHasEntered(true);
-          observer.disconnect();
+        if (entry) {
+          setIsVisible(entry.isIntersecting);
         }
       },
-      { threshold: 0.35 },
+      { 
+        threshold: 0.35,
+        rootMargin: "0px"
+      },
     );
 
     observer.observe(node);
     return () => observer.disconnect();
-  }, [hasEntered]);
+  }, []);
 
   return (
     <section
@@ -177,7 +182,7 @@ export function HomeMetricsSection({
                   <p className="text-4xl font-semibold leading-[1.02] tracking-tight text-[#0f2d4e] sm:text-5xl">
                     <CountUpNumber
                       to={400}
-                      start={hasEntered}
+                      start={isVisible}
                       prefix="US$ "
                       suffix="M+"
                     />
@@ -193,7 +198,7 @@ export function HomeMetricsSection({
               <ScrollReveal direction="up" delayMs={180} threshold={0.35}>
                 <div className="flex flex-col">
                   <p className="text-4xl font-semibold leading-[1.02] tracking-tight text-[#0f2d4e] sm:text-5xl">
-                    <CountUpNumber to={10} start={hasEntered} /> fondos
+                    <CountUpNumber to={10} start={isVisible} /> fondos
                   </p>
                   <p className="mt-3 max-w-[24ch] text-pretty text-base leading-snug text-[#143c69] sm:text-[1.05rem]">
                     Gestionados en dólares y soles
@@ -210,9 +215,9 @@ export function HomeMetricsSection({
                     aria-label="Desde nueve hasta doce por ciento"
                   >
                     <span className="inline-flex items-baseline gap-2">
-                      <CountUpNumber to={9} start={hasEntered} suffix="%" />
+                      <CountUpNumber to={9} start={isVisible} suffix="%" />
                       <span aria-hidden>-</span>
-                      <CountUpNumber to={12} start={hasEntered} suffix="%" />
+                      <CountUpNumber to={12} start={isVisible} suffix="%" />
                     </span>
                   </p>
                   <p className="mt-3 max-w-[24ch] text-pretty text-base leading-snug text-[#143c69] sm:text-[1.05rem]">
