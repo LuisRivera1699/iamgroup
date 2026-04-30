@@ -4,6 +4,7 @@ Entradas breves. Formato: `## YYYY-MM-DD` y viñetas.
 
 ## 2026-04-29
 
+- Nosotros (Visión / Valores): se reorganizó el diagrama para mostrar `Visión` como tarjeta superior y los valores `Transparencia`, `Integridad`, `Pasión` y `Enfoque en resultados` como tarjetas con fondo azul claro `#d1deed`, conectores alineados y bordes azul oscuro sólido/discontinuo según jerarquía.
 - Home (hero): se ajustó la escala visual para acercarla al hero de Gobierno corporativo, con altura más compacta, título `4xl/6xl`, highlight amarillo corporativo en la frase clave y animación por piezas internas.
 
 ## 2026-04-23

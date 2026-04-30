@@ -72,33 +72,56 @@ const BOARD_MEMBERS = [
 
 const CORE_DIAGRAM_ITEMS = [
   {
-    id: "nosotros-core",
-    title: "Nosotros",
-    text: "Brindamos soluciones empresariales para crecimiento patrimonial y acceso a financiamientos a la medida, con un equipo de más de 25 años de experiencia financiera.",
-  },
-  {
-    id: "propuesta-valor",
-    title: "Propuesta de valor",
-    text: "Nos enfocamos en superar las expectativas de nuestros clientes mediante asesoría especializada, un portafolio diversificado, conservador y rentable, y soluciones de financiamiento oportunas y flexibles.",
-  },
-  {
-    id: "mision",
-    title: "Misión",
-    text: "Ser el pilar financiero de nuestros clientes para que cumplan sus objetivos de forma efectiva y responsable.",
-  },
-  {
     id: "vision",
     title: "Visión",
     text: "Ser reconocidos como una empresa peruana referente en soluciones empresariales conservadoras, rentables y transparentes, a través de una experiencia de servicio que supere las expectativas.",
   },
+  {
+    id: "transparencia",
+    title: "Transparencia",
+    text: "Actuamos con información clara, comunicación directa y criterios trazables para construir confianza en cada decisión financiera.",
+  },
+  {
+    id: "integridad",
+    title: "Integridad",
+    text: "Sostenemos relaciones responsables, éticas y consistentes, cuidando los intereses de clientes, inversionistas y aliados.",
+  },
+  {
+    id: "pasion",
+    title: "Pasión",
+    text: "Nos involucramos con energía y compromiso en cada reto, buscando soluciones útiles y una experiencia de servicio superior.",
+  },
+  {
+    id: "enfoque-resultados",
+    title: "Enfoque en resultados",
+    text: "Trabajamos con objetivos concretos, disciplina de ejecución y seguimiento cercano para generar valor medible y sostenible.",
+  },
 ] as const;
 
-const CORE_VALUES = [
-  "Transparencia",
-  "Integridad",
-  "Pasión",
-  "Enfoque en resultados",
-] as const;
+function LongDashedBorder() {
+  return (
+    <svg
+      aria-hidden
+      viewBox="0 0 100 100"
+      preserveAspectRatio="none"
+      className="pointer-events-none absolute inset-0 h-full w-full"
+    >
+      <rect
+        x="0.5"
+        y="0.5"
+        width="99"
+        height="99"
+        rx="4"
+        ry="4"
+        fill="none"
+        stroke="#0f2d4e"
+        strokeDasharray="12 8"
+        strokeWidth="1"
+        vectorEffect="non-scaling-stroke"
+      />
+    </svg>
+  );
+}
 
 export const metadata: Metadata = {
   title: "Nosotros",
@@ -267,7 +290,13 @@ export default function NosotrosPage() {
                 threshold={0.16}
                 className="h-full"
               >
-                <li className="h-full rounded-2xl border border-[#c2d9ec] bg-white p-5 shadow-[0_20px_42px_-32px_rgba(15,45,78,0.35)] sm:p-6">
+                <li
+                  className={[
+                    "relative h-full rounded-2xl bg-[#d1deed] p-5 shadow-[0_20px_42px_-32px_rgba(15,45,78,0.35)] sm:p-6",
+                    index === 0 ? "border border-[#0f2d4e]" : "",
+                  ].join(" ")}
+                >
+                  {index > 0 ? <LongDashedBorder /> : null}
                   <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#5a7ea2]">
                     {`0${index + 1}`.slice(-2)}
                   </p>
@@ -286,11 +315,15 @@ export default function NosotrosPage() {
             <div className="relative mx-auto grid max-w-6xl grid-cols-3 grid-rows-3 gap-5">
               <div
                 aria-hidden
-                className="pointer-events-none absolute left-1/2 top-0 h-full w-px -translate-x-1/2 bg-gradient-to-b from-[#a8c4de] via-[#86a9cb] to-[#a8c4de]"
+                className="pointer-events-none absolute left-1/2 top-0 h-[83.333%] w-px -translate-x-1/2 bg-gradient-to-b from-[#a8c4de] via-[#86a9cb] to-[#a8c4de]"
               />
               <div
                 aria-hidden
                 className="pointer-events-none absolute left-0 top-1/2 h-px w-full -translate-y-1/2 bg-gradient-to-r from-[#a8c4de] via-[#86a9cb] to-[#a8c4de]"
+              />
+              <div
+                aria-hidden
+                className="pointer-events-none absolute left-0 top-[83.333%] h-px w-full -translate-y-1/2 bg-gradient-to-r from-[#a8c4de] via-[#86a9cb] to-[#a8c4de]"
               />
 
               <ScrollReveal
@@ -298,7 +331,7 @@ export default function NosotrosPage() {
                 delayMs={120}
                 className="col-start-2 row-start-1"
               >
-                <article className="rounded-2xl border border-[#c2d9ec] bg-white p-5 shadow-[0_20px_40px_-28px_rgba(15,45,78,0.38)]">
+                <article className="rounded-2xl border border-[#0f2d4e] bg-[#d1deed] p-5 shadow-[0_20px_40px_-28px_rgba(15,45,78,0.38)]">
                   <h3 className="text-xl font-semibold leading-tight text-[#0f2d4e]">
                     {CORE_DIAGRAM_ITEMS[0].title}
                   </h3>
@@ -313,12 +346,13 @@ export default function NosotrosPage() {
                 delayMs={210}
                 className="col-start-1 row-start-2"
               >
-                <article className="rounded-2xl border border-[#c2d9ec] bg-white p-5 shadow-[0_20px_40px_-28px_rgba(15,45,78,0.38)]">
+                <article className="relative rounded-2xl bg-[#d1deed] p-5 shadow-[0_20px_40px_-28px_rgba(15,45,78,0.38)]">
+                  <LongDashedBorder />
                   <h3 className="text-xl font-semibold leading-tight text-[#0f2d4e]">
-                    {CORE_DIAGRAM_ITEMS[2].title}
+                    {CORE_DIAGRAM_ITEMS[1].title}
                   </h3>
                   <p className="mt-3 text-sm leading-relaxed text-[#1d3f62]">
-                    {CORE_DIAGRAM_ITEMS[2].text}
+                    {CORE_DIAGRAM_ITEMS[1].text}
                   </p>
                 </article>
               </ScrollReveal>
@@ -345,12 +379,13 @@ export default function NosotrosPage() {
                 delayMs={300}
                 className="col-start-3 row-start-2"
               >
-                <article className="rounded-2xl border border-[#c2d9ec] bg-white p-5 shadow-[0_20px_40px_-28px_rgba(15,45,78,0.38)]">
+                <article className="relative rounded-2xl bg-[#d1deed] p-5 shadow-[0_20px_40px_-28px_rgba(15,45,78,0.38)]">
+                  <LongDashedBorder />
                   <h3 className="text-xl font-semibold leading-tight text-[#0f2d4e]">
-                    {CORE_DIAGRAM_ITEMS[1].title}
+                    {CORE_DIAGRAM_ITEMS[2].title}
                   </h3>
                   <p className="mt-3 text-sm leading-relaxed text-[#1d3f62]">
-                    {CORE_DIAGRAM_ITEMS[1].text}
+                    {CORE_DIAGRAM_ITEMS[2].text}
                   </p>
                 </article>
               </ScrollReveal>
@@ -358,9 +393,10 @@ export default function NosotrosPage() {
               <ScrollReveal
                 direction="up"
                 delayMs={390}
-                className="col-start-2 row-start-3"
+                className="col-start-1 row-start-3"
               >
-                <article className="rounded-2xl border border-[#c2d9ec] bg-white p-5 shadow-[0_20px_40px_-28px_rgba(15,45,78,0.38)]">
+                <article className="relative rounded-2xl bg-[#d1deed] p-5 shadow-[0_20px_40px_-28px_rgba(15,45,78,0.38)]">
+                  <LongDashedBorder />
                   <h3 className="text-xl font-semibold leading-tight text-[#0f2d4e]">
                     {CORE_DIAGRAM_ITEMS[3].title}
                   </h3>
@@ -369,30 +405,24 @@ export default function NosotrosPage() {
                   </p>
                 </article>
               </ScrollReveal>
+
+              <ScrollReveal
+                direction="up"
+                delayMs={470}
+                className="col-start-3 row-start-3"
+              >
+                <article className="relative rounded-2xl bg-[#d1deed] p-5 shadow-[0_20px_40px_-28px_rgba(15,45,78,0.38)]">
+                  <LongDashedBorder />
+                  <h3 className="text-xl font-semibold leading-tight text-[#0f2d4e]">
+                    {CORE_DIAGRAM_ITEMS[4].title}
+                  </h3>
+                  <p className="mt-3 text-sm leading-relaxed text-[#1d3f62]">
+                    {CORE_DIAGRAM_ITEMS[4].text}
+                  </p>
+                </article>
+              </ScrollReveal>
             </div>
           </div>
-
-          <ScrollReveal direction="up" delayMs={120}>
-            <div className="mt-6 rounded-2xl border border-[#b8d0e5] bg-[#eaf3fb] p-5 sm:mt-7 sm:p-6">
-              <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#1d3f62]">
-                Nuestros valores
-              </p>
-              <p className="mt-3 flex flex-wrap items-baseline text-3xl font-semibold leading-tight sm:text-4xl lg:text-5xl">
-                {CORE_VALUES.map((value, index) => (
-                  <span key={value} className="inline-flex items-baseline">
-                    <span className="rounded-sm px-1 py-0.5 text-[#9aabba] transition-[color,background-color] duration-200 hover:bg-[#fbb03b] hover:text-[#0f2d4e]">
-                      {value}
-                    </span>
-                    {index < CORE_VALUES.length - 1 ? (
-                      <span aria-hidden className="mx-3 text-[#9aabba]">
-                        —
-                      </span>
-                    ) : null}
-                  </span>
-                ))}
-              </p>
-            </div>
-          </ScrollReveal>
         </div>
       </section>
 
