@@ -20,7 +20,7 @@ export function SiteFooter() {
     <footer className="border-t border-[#1d3f62]/45 bg-[#0f2d4e] text-[#d1d1d1]">
       <div className="mx-auto w-full max-w-7xl px-4 py-10 sm:px-6 sm:py-12 lg:px-8">
         <div className="flex flex-col gap-8 md:flex-row md:items-start md:justify-between">
-          <div className="flex flex-col items-start gap-4">
+          <div className="flex flex-col items-center gap-4 md:items-start">
             <Link
               href="/"
               className="inline-flex w-fit cursor-pointer focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#c0deff]/80"
@@ -44,8 +44,8 @@ export function SiteFooter() {
             </a>
           </div>
 
-          <nav aria-label="Enlaces del pie de página" className="md:max-w-3xl">
-            <ul className="grid gap-x-8 gap-y-3 sm:grid-cols-2 lg:grid-cols-3">
+          <nav aria-label="Enlaces del pie de página" className="text-center md:max-w-3xl md:text-left">
+            <ul className="grid grid-cols-2 gap-x-8 gap-y-3 lg:grid-cols-3">
               {FOOTER_LINKS.map((item) => (
                 <li key={item.href}>
                   <Link
@@ -60,7 +60,7 @@ export function SiteFooter() {
           </nav>
         </div>
 
-        <div className="mt-8 border-t border-white/15 pt-4 text-xs text-[#b6c7d9] sm:flex sm:items-center sm:justify-between sm:text-sm">
+        <div className="mt-8 border-t border-white/15 pt-4 text-center text-xs text-[#b6c7d9] sm:flex sm:items-center sm:justify-between sm:text-sm">
           <p>{`© ${currentYear} IAMGroup`}</p>
           <p className="mt-2 sm:mt-0">
             Construido por{" "}

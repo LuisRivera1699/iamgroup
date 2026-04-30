@@ -27,11 +27,11 @@ export function HomeAlliancesSection() {
       className="relative z-30 border-t border-[#88aaca]/45 bg-gradient-to-b from-[#abcbe8] to-[#95badc]"
     >
       <div className="mx-auto w-full max-w-7xl px-4 py-6 sm:px-6 sm:py-7 lg:px-8">
-        <div className="flex flex-col items-start gap-6 sm:flex-row sm:items-center sm:gap-12 lg:gap-16">
+        <div className="flex flex-col items-center gap-6 sm:flex-row sm:items-center sm:gap-12 lg:gap-16">
           <ScrollReveal direction="left" delayMs={0}>
             <h2
               id="home-alliances-title"
-              className="text-[0.825rem] font-semibold uppercase tracking-[0.24em] text-[#143c69] sm:whitespace-nowrap"
+              className="text-center text-[0.825rem] font-semibold uppercase tracking-[0.24em] text-[#143c69] sm:text-left sm:whitespace-nowrap"
             >
               Nuestras alianzas
             </h2>
