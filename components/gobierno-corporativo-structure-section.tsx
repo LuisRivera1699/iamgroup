@@ -73,7 +73,73 @@ const GOVERNANCE_COMMITTEES = [
   },
 ] as const;
 
+const COMMITTEE_MEMBER_GROUPS = [
+  {
+    id: "comite-inversiones",
+    eyebrow: "Miembros del comité de inversiones",
+    title: "Criterio financiero para evaluar oportunidades con rigor.",
+    members: [
+      {
+        id: "luis-castro",
+        name: "Luis Castro",
+        role: "Miembro del Comité de Inversiones",
+        image:
+          "https://iamgroup.pe/wp-content/uploads/2024/03/Formato-Resena-Directores-03.png",
+        bio: "Administrador de Empresas con Maestría en Banca y Finanzas en el IDE en Madrid España, con más de 25 años de experiencia en el sector financiero, habiendo trabajado en puestos de dirección gerente en los bancos BBVA, Santander y Banbif en Banca Comercial, empresarial y corporativa, Gerente general de Inkapital Asset Management SAC.",
+      },
+      {
+        id: "sergio-de-albertis",
+        name: "Sergio de Albertis",
+        role: "Miembro del Comité de Inversiones",
+        image:
+          "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=900&q=80",
+        bio: "Economista de la Universidad Ricardo Palma, con más de 25 años de experiencia en el sector financiero en el mercado de capitales, socio fundador de Private Investor Peru SAC y Placement Financial SAC, asesoría de inversiones a nivel internacional y local de portafolios de más de US$50,000,000, Representante de Seminario Agente de Bolsa.",
+      },
+      {
+        id: "christian-armas",
+        name: "Christian Armas",
+        role: "Miembro del Comité de Inversiones",
+        image:
+          "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=900&q=80",
+        bio: "Profesional en administración de empresas con estudios en USMP, ESAN y CENTRUM PUCP, Ejecutivo Senior en banca y finanzas con solidos conocimiento en la gestión comercial, inversiones y banca corporativa a través de los bancos BANBIF, Pichincha y Banco General de Panamá.",
+      },
+    ],
+  },
+  {
+    id: "comite-vigilancia",
+    eyebrow: "Miembros del comité de vigilancia",
+    title: "Supervisión independiente para fortalecer control y transparencia.",
+    members: [
+      {
+        id: "eduardo-morales",
+        name: "Eduardo Morales",
+        role: "Miembro del Comité de Vigilancia",
+        image:
+          "https://iamgroup.pe/wp-content/uploads/2024/03/Formato-Resena-Directores-02.png",
+        bio: "Director de Caja Huancayo, ex Gerente General del Banco Financiero, hoy Pichincha, ex Gerente de Negocios de Interbank y Banbif. Economista de la Universidad de Lima, exdecano en la facultad de Economía de la Universidad de Lima, docente de Economía de la Universidad San Marcos.",
+      },
+      {
+        id: "carlos-de-albertis",
+        name: "Carlos de Albertis",
+        role: "Miembro del Comité de Vigilancia",
+        image:
+          "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=900&q=80",
+        bio: "Gestor y Asesor de Inversiones con más de 15 años de experiencia en el mercado de capitales e inversiones a través de las Empresas Prívate Investors SAC y Placement Financial SAC, que asesora un portafolio de más de US$50 MM en inversiones de renta fija y variable en el mercado local e internacional. Profesional de Administración de Empresas en la U. Ricardo Palma, con post grado en administración en la Universidad Católica.",
+      },
+      {
+        id: "gonzalo-bonilla",
+        name: "Gonzalo Bonilla",
+        role: "Miembro del Comité de Vigilancia",
+        image:
+          "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=900&q=80",
+        bio: "Profesional en Administración de Empresas de la Universidad del Pacifico con MBA en UNIR-MEXICO, con experiencia de más de 10 años en riesgos de cartera, operativos y seguimiento, control de cartera e interno en banca y fondos de inversión.",
+      },
+    ],
+  },
+] as const;
+
 type GovernanceCommittee = (typeof GOVERNANCE_COMMITTEES)[number];
+type CommitteeMemberGroup = (typeof COMMITTEE_MEMBER_GROUPS)[number];
 
 const COMMITTEE_SECTORS = [
   {
@@ -309,6 +375,78 @@ function CommitteeDesktopDiagram() {
   );
 }
 
+function CommitteeMemberCard({
+  member,
+  index,
+}: {
+  member: CommitteeMemberGroup["members"][number];
+  index: number;
+}) {
+  return (
+    <ScrollReveal
+      direction="up"
+      delayMs={120 + index * 90}
+      threshold={0.14}
+      className="h-full"
+    >
+      <li className="h-full">
+        <article className="group flex h-full flex-col overflow-hidden rounded-2xl border border-[#b7cde3] bg-white shadow-[0_20px_42px_-30px_rgba(15,45,78,0.48)]">
+          <div className="relative overflow-hidden border-b border-[#d1deed]">
+            <Image
+              src={member.image}
+              alt={`Retrato de ${member.name}`}
+              width={1200}
+              height={1600}
+              sizes="(min-width: 1024px) 31vw, (min-width: 640px) 45vw, 100vw"
+              className="h-72 w-full object-cover object-center transition-transform duration-300 group-hover:scale-[1.03] group-focus-within:scale-[1.03] sm:h-80"
+            />
+            <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#0f2d4e]/90 via-[#0f2d4e]/32 to-transparent" />
+          </div>
+
+          <div className="flex flex-1 flex-col p-5 sm:p-6">
+            <h4 className="text-2xl font-semibold leading-tight text-[#0f2d4e]">
+              {member.name}
+            </h4>
+            <p className="mt-4 text-sm leading-relaxed text-[#1d3f62] sm:text-base">
+              {member.bio}
+            </p>
+          </div>
+        </article>
+      </li>
+    </ScrollReveal>
+  );
+}
+
+function CommitteeMembersSection({ group }: { group: CommitteeMemberGroup }) {
+  return (
+    <section aria-labelledby={`${group.id}-members-title`} className="mt-8">
+      <div className="rounded-3xl border border-[#b8d0e5] bg-[#dceaf7] p-5 shadow-[0_24px_48px_-34px_rgba(15,45,78,0.35)] sm:p-6 lg:p-8">
+        <div className="max-w-4xl">
+          <ScrollReveal direction="left" delayMs={40}>
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#1d3f62]">
+              {group.eyebrow}
+            </p>
+          </ScrollReveal>
+          <ScrollReveal direction="left" delayMs={110}>
+            <h3
+              id={`${group.id}-members-title`}
+              className="mt-3 text-balance text-3xl font-semibold leading-tight text-[#0f2d4e] sm:text-4xl"
+            >
+              {group.title}
+            </h3>
+          </ScrollReveal>
+        </div>
+
+        <ul className="mt-8 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+          {group.members.map((member, index) => (
+            <CommitteeMemberCard key={member.id} member={member} index={index} />
+          ))}
+        </ul>
+      </div>
+    </section>
+  );
+}
+
 
 export function GobiernoCorporativoStructureSection() {
   const [openCommitteeId, setOpenCommitteeId] = useState<string | null>(null);
@@ -440,6 +578,10 @@ export function GobiernoCorporativoStructureSection() {
             <CommitteeDesktopDiagram />
           </div>
         </div>
+
+        {COMMITTEE_MEMBER_GROUPS.map((group) => (
+          <CommitteeMembersSection key={group.id} group={group} />
+        ))}
 
         <ScrollReveal direction="up" delayMs={120}>
           <div className="mt-8 rounded-3xl border border-[#b8d0e5] bg-[#dceaf7] p-6 shadow-[0_20px_40px_-34px_rgba(15,45,78,0.35)] lg:p-8">

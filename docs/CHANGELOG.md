@@ -4,6 +4,7 @@ Entradas breves. Formato: `## YYYY-MM-DD` y viñetas.
 
 ## 2026-04-29
 
+- Gobierno corporativo (miembros): añadidas secciones de miembros del Comité de Inversiones y Comité de Vigilancia debajo de `Nuestros comités`, con cards de perfil, fotos existentes/stock verificado y animación por scroll.
 - Gobierno corporativo (comités): añadida la sección `Nuestros comités` debajo de los cards principales, con gráfico circular seccionado en tres, conectores visuales, bullets revelados en hover/focus e iconos SVG propios para Directorio, Vigilancia e Inversiones.
 - Gobierno corporativo (estructura): eliminado el card de comités, removido el botón "Ver comités" y el modal completo asociado; solo se mantienen los cards de "Directorio" y "Oficial de Cumplimiento Corporativo" con fondo `#d1deed` y borde `#0f2d4e` (color del texto).
 - Inversiones/Financiamiento: las secciones de productos conservan degradado y ahora funden el inicio con el hero antes de transicionar desde `#0f2d4e` hacia azules claros corporativos (`#c8e2ff` y `#d1deed`), evitando divisiones visibles y cierres casi blancos.
