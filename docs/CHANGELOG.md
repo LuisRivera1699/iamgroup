@@ -2,6 +2,10 @@
 
 Entradas breves. Formato: `## YYYY-MM-DD` y viñetas.
 
+## 2026-05-06
+
+- Gobierno corporativo (comités): el gráfico de `Nuestros comités` ahora suma `Oficial de Cumplimiento Corporativo` con su icono y bullets de cumplimiento, manteniendo el pie chart en cuatro cuadrantes distribuidos dos a la izquierda y dos a la derecha.
+
 ## 2026-04-29
 
 - Gobierno corporativo (miembros): añadidas secciones de miembros del Comité de Inversiones y Comité de Vigilancia debajo de `Nuestros comités`, con cards de perfil, fotos existentes/stock verificado y animación por scroll.

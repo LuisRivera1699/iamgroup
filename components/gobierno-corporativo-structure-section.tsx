@@ -54,6 +54,15 @@ const GOVERNANCE_COMMITTEES = [
     iconSrc: "/icons/gobierno-corporativo/comite-directorio.svg",
   },
   {
+    id: "oficial-cumplimiento",
+    title: "Oficial de Cumplimiento Corporativo",
+    points: [
+      "Monitoreo regulatorio transversal en toda la organización",
+      "Reporte directo a la UIF de la SBS para reforzar cumplimiento",
+    ],
+    iconSrc: "/icons/gobierno-corporativo/cumplimiento-splaft.svg",
+  },
+  {
     id: "comite-vigilancia",
     title: "Comité de vigilancia",
     points: [
@@ -123,7 +132,7 @@ const COMMITTEE_MEMBER_GROUPS = [
         name: "Carlos de Albertis",
         role: "Miembro del Comité de Vigilancia",
         image:
-          "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=900&q=80",
+          "https://images.unsplash.com/photo-1562788869-4ed32648eb72?auto=format&fit=crop&w=900&q=80",
         bio: "Gestor y Asesor de Inversiones con más de 15 años de experiencia en el mercado de capitales e inversiones a través de las Empresas Prívate Investors SAC y Placement Financial SAC, que asesora un portafolio de más de US$50 MM en inversiones de renta fija y variable en el mercado local e internacional. Profesional de Administración de Empresas en la U. Ricardo Palma, con post grado en administración en la Universidad Católica.",
       },
       {
@@ -144,30 +153,43 @@ type CommitteeMemberGroup = (typeof COMMITTEE_MEMBER_GROUPS)[number];
 const COMMITTEE_SECTORS = [
   {
     id: "comite-directorio",
-    path: "M100 100L100 22A78 78 0 0 0 32.45 139Z",
+    path: "M100 100L100 22A78 78 0 0 0 22 100Z",
     fill: "#9bb2cb",
-    iconClassName: "left-[calc(50%-5rem)] top-[calc(50%-2.9rem)] -translate-x-1/2 -translate-y-1/2",
-    cardClassName: "left-0 top-8 w-[21rem]",
-    connectorPath: "M420 238L252 82",
-    connectorDot: { cx: 420, cy: 238 },
+    iconClassName: "left-[calc(50%-3.9rem)] top-[calc(50%-3.9rem)] -translate-x-1/2 -translate-y-1/2",
+    cardClassName: "left-0 top-0 w-[21rem]",
+    connectorPath: "M410 205L252 76",
+    connectorDot: { cx: 410, cy: 205 },
+    revealDirection: "right",
+  },
+  {
+    id: "oficial-cumplimiento",
+    path: "M100 100L178 100A78 78 0 0 1 100 178Z",
+    fill: "#d1deed",
+    iconClassName: "left-[calc(50%+3.9rem)] top-[calc(50%+3.9rem)] -translate-x-1/2 -translate-y-1/2",
+    cardClassName: "bottom-0 right-0 w-[21rem]",
+    connectorPath: "M590 355L748 484",
+    connectorDot: { cx: 590, cy: 355 },
+    revealDirection: "left",
   },
   {
     id: "comite-vigilancia",
-    path: "M100 100L100 22A78 78 0 0 1 167.55 139Z",
-    fill: "#d1deed",
-    iconClassName: "left-[calc(50%+5rem)] top-[calc(50%-2.9rem)] -translate-x-1/2 -translate-y-1/2",
-    cardClassName: "right-0 top-8 w-[21rem]",
-    connectorPath: "M580 238L748 82",
-    connectorDot: { cx: 580, cy: 238 },
+    path: "M100 100L100 22A78 78 0 0 1 178 100Z",
+    fill: "#c8e2ff",
+    iconClassName: "left-[calc(50%+3.9rem)] top-[calc(50%-3.9rem)] -translate-x-1/2 -translate-y-1/2",
+    cardClassName: "right-0 top-0 w-[21rem]",
+    connectorPath: "M590 205L748 76",
+    connectorDot: { cx: 590, cy: 205 },
+    revealDirection: "left",
   },
   {
     id: "comite-inversiones",
-    path: "M100 100L167.55 139A78 78 0 0 1 32.45 139Z",
+    path: "M100 100L22 100A78 78 0 0 0 100 178Z",
     fill: "#fbb03b",
-    iconClassName: "left-1/2 top-[calc(50%+5.8rem)] -translate-x-1/2 -translate-y-1/2",
-    cardClassName: "bottom-0 left-[calc(50%-11.5rem)] w-[23rem]",
-    connectorPath: "M500 378L500 494",
-    connectorDot: { cx: 500, cy: 378 },
+    iconClassName: "left-[calc(50%-3.9rem)] top-[calc(50%+3.9rem)] -translate-x-1/2 -translate-y-1/2",
+    cardClassName: "bottom-0 left-0 w-[21rem]",
+    connectorPath: "M410 355L252 484",
+    connectorDot: { cx: 410, cy: 355 },
+    revealDirection: "right",
   },
 ] as const;
 
@@ -296,7 +318,7 @@ function CommitteeDesktopDiagram() {
         <svg
           viewBox="0 0 200 200"
           role="img"
-          aria-label="Diagrama circular con tres comités de gobierno"
+          aria-label="Diagrama circular con cuatro elementos de gobierno"
           className="absolute left-1/2 top-1/2 h-[22rem] w-[22rem] -translate-x-1/2 -translate-y-1/2 drop-shadow-[0_26px_34px_rgba(15,45,78,0.16)]"
         >
           <circle cx="100" cy="100" r="78" fill="#d1deed" stroke="#0f2d4e" strokeWidth="2.5" />
@@ -346,7 +368,7 @@ function CommitteeDesktopDiagram() {
             </ScrollReveal>
 
             <ScrollReveal
-              direction={index === 1 ? "left" : index === 2 ? "up" : "right"}
+              direction={sector.revealDirection}
               delayMs={230 + index * 80}
               className={[
                 "pointer-events-auto absolute z-30",
