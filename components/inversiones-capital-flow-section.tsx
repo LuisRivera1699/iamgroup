@@ -20,14 +20,14 @@ const CAPITAL_FLOW_STEPS = [
     id: "cavali",
     number: "03",
     actor: "CAVALI",
-    title: "Inversión en facturas de empresa AAA",
+    title: "Inversiones en acreencias de empresas calificadas",
     icon: "documentos",
   },
   {
     id: "empresa-aaa",
     number: "04",
     actor: "Empresa AAA",
-    title: "Pago de la factura por parte de la empresa AAA",
+    title: "Pago de las acreencias",
     icon: "pago",
   },
   {

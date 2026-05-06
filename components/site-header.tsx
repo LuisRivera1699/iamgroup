@@ -63,7 +63,7 @@ export function SiteHeader() {
         >
           <Image
             src={LOGO_IAM_URL}
-            alt="IAMGroup"
+            alt="IAM Group"
             width={200}
             height={56}
             className="h-10 w-auto sm:h-11"

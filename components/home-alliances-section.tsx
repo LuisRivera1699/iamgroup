@@ -3,6 +3,14 @@ import { ScrollReveal } from "@/components/scroll-reveal";
 
 const alliances = [
   {
+    id: "cavali",
+    name: "CAVALI",
+    logoSrc: "/logos/alliances/cavali-logo.png",
+    logoWidth: 868,
+    logoHeight: 314,
+    tooltip: "CAVALI es un participante asociado.",
+  },
+  {
     id: "sbs",
     name: "Superintendencia de Banca, Seguros y AFP",
     logoSrc: "/logos/alliances/sbs-logotipo.svg",
@@ -11,12 +19,12 @@ const alliances = [
     tooltip: "Inscritos en la SBS como empresa de factoring y préstamos.",
   },
   {
-    id: "cavali",
-    name: "CAVALI",
-    logoSrc: "/logos/alliances/cavali-logo.png",
-    logoWidth: 868,
-    logoHeight: 314,
-    tooltip: "CAVALI es un participante asociado.",
+    id: "experian",
+    name: "Experian Mi Sentinel",
+    logoSrc: "https://www.misentinel.com.pe/usuario/assets/images/icons/logoExperianDesktop.png",
+    logoWidth: 200,
+    logoHeight: 60,
+    tooltip: "Alianza con Experian Mi Sentinel",
   },
 ];
 

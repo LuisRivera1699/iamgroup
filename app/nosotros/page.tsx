@@ -85,27 +85,27 @@ const CORE_DIAGRAM_ITEMS = [
   {
     id: "vision",
     title: "Visión",
-    text: "Ser reconocidos como una empresa peruana referente en soluciones empresariales conservadoras, rentables y transparentes, a través de una experiencia de servicio que supere las expectativas.",
+    text: "Ser reconocidos como una empresa en soluciones financieras rentables, seguras y transparentes.",
   },
   {
     id: "transparencia",
     title: "Transparencia",
-    text: "Actuamos con información clara, comunicación directa y criterios trazables para construir confianza en cada decisión financiera.",
+    text: "Actuamos con informacion clara, directa y criterios para construir confianza en cada decisión financiera.",
   },
   {
     id: "integridad",
     title: "Integridad",
-    text: "Sostenemos relaciones responsables, éticas y consistentes, cuidando los intereses de clientes, inversionistas y aliados.",
+    text: "Sostenemos relaciones responsables éticas y cercanas, cuidando los intereses de los inversionistas, clientes y aliados.",
   },
   {
     id: "pasion",
     title: "Pasión",
-    text: "Nos involucramos con energía y compromiso en cada reto, buscando soluciones útiles y una experiencia de servicio superior.",
+    text: "Nos involucramos con energía y compromiso, buscando experiencias y soluciones con nuestros inversionistas y clientes.",
   },
   {
     id: "enfoque-resultados",
     title: "Enfoque en resultados",
-    text: "Trabajamos con objetivos concretos, disciplina de ejecución y seguimiento cercano para generar valor medible y sostenible.",
+    text: "Trabajamos con objetivos concretos para generar valor medible y sostenible.",
   },
 ] as const;
 
@@ -279,7 +279,7 @@ export default function NosotrosPage() {
           <div className="max-w-4xl">
             <ScrollReveal direction="left" delayMs={0}>
               <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#1d3f62]">
-                Esencia IAMGroup
+                Esencia IAM Group
               </p>
             </ScrollReveal>
             <ScrollReveal direction="left" delayMs={90}>
@@ -376,7 +376,7 @@ export default function NosotrosPage() {
                 <div className="flex h-48 w-48 flex-col items-center justify-center rounded-full border-4 border-[#9fbddb] bg-[#0f2d4e] px-5 text-center shadow-[0_24px_48px_-32px_rgba(15,45,78,0.6)]">
                   <Image
                     src={LOGO_IAM_URL}
-                    alt="IAMGroup"
+                    alt="IAM Group"
                     width={200}
                     height={56}
                     className="h-9 w-auto"

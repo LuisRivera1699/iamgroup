@@ -1,9 +1,9 @@
 ---
 name: iamgroup-investor-website
-description: Builds the IAMGroup informational Next.js + Tailwind site with investor- and engineering-grade UX, in-repo copy, and no CMS. Use when working in this repository, on pages or components, or when the user mentions IAMGroup, the corporate site, static pages, or marketing copy migration.
+description: Builds the IAM Group informational Next.js + Tailwind site with investor- and engineering-grade UX, in-repo copy, and no CMS. Use when working in this repository, on pages or components, or when the user mentions IAM Group, the corporate site, static pages, or marketing copy migration.
 ---
 
-# IAMGroup — sitio informativo (Next.js + Tailwind)
+# IAM Group — sitio informativo (Next.js + Tailwind)
 
 ## Antes de implementar
 

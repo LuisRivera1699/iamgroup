@@ -4,7 +4,7 @@ import { ScrollReveal } from "@/components/scroll-reveal";
 const FINANCING_PRODUCTS = [
   {
     id: "factoring",
-    title: "Factoring",
+    title: "Acreencias Negociadas",
     summary:
       "Impulsa la liquidez de tu empresa financiando facturas y letras negociadas en CAVALI.",
     points: ["Facturas y letras negociadas", "Liquidez inmediata de corto plazo"],
@@ -14,7 +14,7 @@ const FINANCING_PRODUCTS = [
   },
   {
     id: "confirming",
-    title: "Confirming",
+    title: "Cesión de acreencias",
     summary:
       "Financia tus compras mediante cesión de facturas, optimizando el ciclo de pago de proveedores.",
     points: ["Cesión de facturas", "En Cavali optimizando el ciclo de pago de proveedores"],

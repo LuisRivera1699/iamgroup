@@ -50,25 +50,9 @@ export function InversionesProductsSection() {
             </h2>
             <p className="mt-4 max-w-5xl text-sm leading-relaxed text-[#1d3f62] sm:text-base">
               Propuesta de inversión competitiva y diversificada para personas
-              naturales y jurídicas, combinando operaciones de corto plazo con
-              facturas de obligados de primer nivel y operaciones de mediano
-              plazo con garantías hipotecarias de cobertura y calidad.
+              naturales y jurídicas, con operaciones de corto plazo de acreencias de obligados calificados.
             </p>
 
-            <div className="mt-6 flex items-center gap-3 rounded-2xl border border-[#b8d0e5] bg-[#eaf3fb] px-4 py-4 sm:px-5">
-              <Image
-                src="/icons/inversiones/portfolio-diversified.svg"
-                alt=""
-                width={176}
-                height={120}
-                aria-hidden
-                className="h-14 w-auto shrink-0 object-contain sm:h-16"
-              />
-              <p className="text-sm font-medium leading-relaxed text-[#0f2d4e] sm:text-base">
-                Portafolio conservador, rentable y con mecanismos de evaluación
-                de riesgo para una gestión patrimonial sostenible.
-              </p>
-            </div>
           </div>
         </ScrollReveal>
 

@@ -16,11 +16,11 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "IAMGroup",
-    template: "%s · IAMGroup",
+    default: "IAM Group",
+    template: "%s · IAM Group",
   },
   description:
-    "IAMGroup — soluciones corporativas, inversiones y financiamiento con enfoque institucional.",
+    "IAM Group — soluciones corporativas, inversiones y financiamiento con enfoque institucional.",
 };
 
 export default function RootLayout({

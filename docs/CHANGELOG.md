@@ -54,9 +54,9 @@ Entradas breves. Formato: `## YYYY-MM-DD` y viñetas.
 - Nosotros: en `Nuestras cifras` se ocultó el botón `Conoce más` cuando el bloque se renderiza dentro de `/nosotros`, manteniéndolo activo en Home.
 - Nosotros: se añadieron al final de la página las secciones `Nuestras cifras` y `Nuestras alianzas` reutilizando los bloques del home para completar el cierre institucional.
 - Nosotros (valores): interacción hover refinada; cada valor ahora resalta con fondo amarillo y texto azul oscuro para un acento más alineado a marca.
-- Nosotros (core/diagrama): nodo central actualizado a círculo oscuro con etiqueta `Núcleo` + logo IAMGroup para mejorar contraste y jerarquía de marca.
+- Nosotros (core/diagrama): nodo central actualizado a círculo oscuro con etiqueta `Núcleo` + logo IAM Group para mejorar contraste y jerarquía de marca.
 - Nosotros (core/diagrama): refinada la composición visual en desktop con grilla 3x3 y conectores centrados para eliminar solapes y mejorar legibilidad de los bloques estratégicos.
-- Nosotros (core): sección rediseñada a formato visual tipo diagrama estratégico (nodo central IAMGroup + bloques conectados de Nosotros/Propuesta/Misión/Visión en desktop) con versión compacta en móvil.
+- Nosotros (core): sección rediseñada a formato visual tipo diagrama estratégico (nodo central IAM Group + bloques conectados de Nosotros/Propuesta/Misión/Visión en desktop) con versión compacta en móvil.
 - Nosotros (valores): cada valor ahora resalta en amarillo corporativo al pasar el mouse, manteniendo separadores sobrios para una lectura clara.
 - Nosotros: nueva sección clara de información core (`Nosotros`, `Propuesta de valor`, `Misión`, `Visión`) con layout en cards y bloque tipográfico de `Nuestros valores` para reforzar claridad, confianza y coherencia institucional.
 - Nosotros (Directorio): el CTA textual `Ver LinkedIn` fue reemplazado por el logo de LinkedIn sin contenedor circular y reubicado en la esquina derecha del bloque nombre/cargo, manteniendo accesibilidad con `aria-label`.
@@ -67,7 +67,7 @@ Entradas breves. Formato: `## YYYY-MM-DD` y viñetas.
 - Nosotros: hero section renovado con imagen de fondo de stock (Unsplash), overlay para legibilidad, titular corto de impacto, texto institucional resumido y CTA `Contacta a un asesor` hacia `/contacto`.
 - Home: se retiró el aviso textual bajo el hero sobre fotografías de fondo ilustrativas.
 - Footer: botón `Mis inversiones` reubicado debajo del logo para mejorar jerarquía visual y mantener consistencia con el header.
-- Global: nuevo `SiteFooter` simple/profesional en azul oscuro corporativo (`#0f2d4e`) con logo IAMGroup, enlaces de navegación y legales, botón `Mis inversiones` consistente con el header, copyright dinámico (`© año actual`) y crédito externo a Team Aurora.
+- Global: nuevo `SiteFooter` simple/profesional en azul oscuro corporativo (`#0f2d4e`) con logo IAM Group, enlaces de navegación y legales, botón `Mis inversiones` consistente con el header, copyright dinámico (`© año actual`) y crédito externo a Team Aurora.
 - Home: `Por que elegirnos` ajustada con fondo de imagen de stock gratuita (Unsplash) y overlay para legibilidad; se recupera el estilo claro de cards y la paleta original de iconos SVG.
 - Home: nueva seccion `Por que elegirnos` con encabezado + CTA a contacto y 3 cards resumidas (experiencia, resultados, seguridad) con iconos SVG propios; cada card revela detalle en hover/focus y al tocar en movil, con animacion de entrada por scroll.
 - Home: nueva seccion compacta `Nuestras alianzas` debajo de `Nuestras cifras`, con fondo azul claro de seccion completa, logos de SBS/CAVALI centrados en mayor escala, tooltip flotante profesional en hover/focus y animacion de entrada por scroll con `stagger` suave.
@@ -83,7 +83,7 @@ Entradas breves. Formato: `## YYYY-MM-DD` y viñetas.
 - Hero de inicio: carrusel de 3 diapositivas (institucional, financiamiento, inversiones) con transición por opacidad, controles, puntos, flechas, teclado, swipe en táctil, autopause al hover o si la pestaña no está visible, respeto a `prefers-reduced-motion` y CTA a rutas del sitio.
 - Home: nueva sección de entrada institucional (`Nosotros`) y bloque de métricas (`Nuestras cifras`) debajo del hero, con copy breve orientado a conversión, tarjetas de acceso a Inversiones/Financiamiento y CTA a `Nosotros`, manteniendo paleta azul corporativa, estados interactivos y enfoque responsive.
 - Home (`Nuestras cifras`): fondo de sección ajustado a un contraste más oscuro y animación de conteo en entrada (de 0 al valor final) activada por `IntersectionObserver`, con respeto a `prefers-reduced-motion`.
-- Inicializado Next.js 16 (App Router) + TypeScript + Tailwind CSS 4, con home, rutas de menú (placeholders), header fixed transparente en tope y sólido al scroll, logo IAMGroup, CTA «Mis inversiones» (URL configurable) y patrón de colores alineado a `colors.md`.
+- Inicializado Next.js 16 (App Router) + TypeScript + Tailwind CSS 4, con home, rutas de menú (placeholders), header fixed transparente en tope y sólido al scroll, logo IAM Group, CTA «Mis inversiones» (URL configurable) y patrón de colores alineado a `colors.md`.
 - Regla `iamgroup-ui-responsive` (siempre activa) y actualización de skill: la UI debe ser **mobile-first** y con la misma exigencia en móvil que en desktop; experiencia de marca enlaza a esta regla.
 - Regla `iamgroup-ui-interactive-states`: anclas y botones con `cursor-pointer` e **idle, hover, active, focus-visible y disabled** de forma coherente (documentación y skill actualizados).
 - Regla `iamgroup-ui-assets`: iconos en **SVG**; imágenes de bancos gratuitos (Unsplash, Pexels, etc.) y **verificar** que funcionan antes de integrar; skill y `docs/README` actualizados.

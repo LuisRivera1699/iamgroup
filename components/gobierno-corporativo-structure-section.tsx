@@ -338,18 +338,11 @@ export function GobiernoCorporativoStructureSection() {
             className="mt-3 max-w-5xl text-balance text-3xl font-semibold leading-tight tracking-tight text-[#0f2d4e] sm:text-4xl lg:text-5xl"
           >
             Estructura institucional con{" "}
-            <span className="text-[#fbb03b]">control, disciplina y</span>{" "}
-            trazabilidad en cada decisión.
+            <span className="text-[#fbb03b]">control, medición y transparencia</span>{" "}
+            en cada decisión.
           </h2>
         </ScrollReveal>
 
-        <ScrollReveal direction="left" delayMs={170}>
-          <p className="mt-4 max-w-4xl text-sm leading-relaxed text-[#1d3f62] sm:text-base">
-            Nuestra gobernanza combina dirección estratégica, supervisión
-            regulatoria y comités especializados para proteger la operación y
-            fortalecer la confianza de inversionistas, clientes y aliados.
-          </p>
-        </ScrollReveal>
 
         <ul className="mt-8 grid gap-4 lg:grid-cols-2">
           {GOVERNANCE_PILLARS.map((pillar, index) => (

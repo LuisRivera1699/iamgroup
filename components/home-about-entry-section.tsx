@@ -4,20 +4,20 @@ import { ScrollReveal } from "@/components/scroll-reveal";
 const PILLAR_CARDS = [
   {
     id: "inversiones",
-    audience: "Para inversionistas y familias",
-    title: "Estrategias patrimoniales con criterio conservador",
+    audience: "Para inversionistas",
+    title: "Estrategias patrimoniales",
     description:
-      "Diseñamos alternativas diversificadas para proteger y hacer crecer patrimonio con acompañamiento experto y visión de largo plazo.",
+      "Diseñamos alternativas diversificadas para proteger y hacer crecer patrimonio.",
     href: "/inversiones",
     cta: "Explorar inversiones",
     tone: "sky",
   },
   {
     id: "financiamiento",
-    audience: "Para empresas en expansión",
-    title: "Financiamiento oportuno para objetivos concretos",
+    audience: "Para empresas",
+    title: "Financiamiento oportuno",
     description:
-      "Estructuramos soluciones flexibles de mediano y corto plazo para que su empresa avance con orden financiero y velocidad.",
+      "Estructuramos soluciones flexibles de corto y mediano plazo.",
     href: "/financiamiento",
     cta: "Ver financiamiento",
     tone: "navy",
@@ -61,9 +61,8 @@ export function HomeAboutEntrySection() {
             </ScrollReveal>
             <ScrollReveal direction="left" delayMs={180}>
               <p className="mt-4 max-w-2xl text-pretty text-sm leading-relaxed text-[#143c69] sm:text-base">
-                En IAMGroup combinamos más de dos décadas de experiencia en el
-                sistema financiero para guiar decisiones patrimoniales y de
-                financiamiento con enfoque claro, rentable y responsable.
+                En IAM Group combinamos más de dos décadas de experiencia en el
+                sistema financiero y empresarial.
               </p>
             </ScrollReveal>
           </div>
@@ -73,7 +72,7 @@ export function HomeAboutEntrySection() {
               href="/nosotros"
               className="inline-flex min-h-11 w-fit cursor-pointer items-center gap-2 rounded-full border border-[#0f2d4e]/20 bg-[#0f2d4e] px-5 py-2 text-sm font-semibold text-white transition-colors hover:bg-[#143c69] active:bg-[#1d3f62] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0f2d4e] sm:min-h-12"
             >
-              Conocer IAMGroup
+              Conocer IAM Group
               <span aria-hidden className="text-base leading-none">
                 →
               </span>

@@ -131,7 +131,7 @@ export function ContactoAdvisorFormSection() {
                 Gracias por contactarnos
               </h2>
               <p className="mt-4 text-sm leading-relaxed text-[#1d3f62] sm:text-base">
-                Hemos recibido tus datos. Un asesor de IAMGroup se comunicará
+                Hemos recibido tus datos. Un asesor de IAM Group se comunicará
                 contigo cuanto antes para ayudarte con tu consulta.
               </p>
               <button

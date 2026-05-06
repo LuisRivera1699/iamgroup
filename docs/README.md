@@ -1,4 +1,4 @@
-# Documentación del proyecto (IAMGroup)
+# Documentación del proyecto (IAM Group)
 
 Mantenida **en el repo**; el agente y el equipo deben **actualizarla** cuando cambien rutas, stack, despliegue o convenciones (regla: `iamgroup-project-documentation`).
 

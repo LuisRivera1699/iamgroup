@@ -154,7 +154,7 @@ export function HomeMetricsSection({
                 id="home-metrics-title"
                 className="mt-3 text-balance text-3xl font-semibold tracking-tight text-white sm:text-4xl"
               >
-                Resultados que respaldan la gestión de IAMGroup.
+                Resultados que respaldan la gestión de IAM Group.
               </h2>
             </ScrollReveal>
           </div>

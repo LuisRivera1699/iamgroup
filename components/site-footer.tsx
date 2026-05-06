@@ -27,7 +27,7 @@ export function SiteFooter() {
             >
               <Image
                 src={LOGO_IAM_URL}
-                alt="IAMGroup"
+                alt="IAM Group"
                 width={200}
                 height={56}
                 className="h-10 w-auto sm:h-11"
@@ -61,7 +61,7 @@ export function SiteFooter() {
         </div>
 
         <div className="mt-8 border-t border-white/15 pt-4 text-center text-xs text-[#b6c7d9] sm:flex sm:items-center sm:justify-between sm:text-sm">
-          <p>{`© ${currentYear} IAMGroup`}</p>
+          <p>{`© ${currentYear} IAM Group`}</p>
           <p className="mt-2 sm:mt-0">
             Construido por{" "}
             <a
